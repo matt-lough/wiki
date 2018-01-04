@@ -1,7 +1,7 @@
 ## Getting Started
 - [Installation](https://github.com/poanetwork/wiki/wiki/POA-Installation)
 - [Exchanges](https://github.com/poanetwork/wiki/wiki/POA-on-Exchanges)
-- [FAQ](https://github.com/poanetwork/wiki/wiki/Frequently-Asked-Questions)
+- [FAQ](Frequently-Asked-Questions)
 ### Wallets
 - [MEW](https://github.com/poanetwork/wiki/wiki/POA-Network-on-MEW)
 - [Ledger](https://github.com/poanetwork/wiki/wiki/POA-Network-on-Ledger)
