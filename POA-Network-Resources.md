@@ -16,5 +16,5 @@ __POA Network is NOT an ERC20 token, but is ERC20 Compatiable. POA has its own b
 ### POA Block Explorers
 - Official POA Core Explorer: [https://core-explorer.poa.network/](https://core-explorer.poa.network/)
 - Official POA Sokol Explorer: [https://sokol-explorer.poa.network/](https://sokol-explorer.poa.network/)
-- Community Made POA Core Explorer: [https://poaexplorer.com/](https://poaexplorer.com/)
+- Community Made POA Core Explorer: [https://poaexplorer.com/](https://poaexplorer.com/)    
     Made by Telegram Community Member, Linsay Alcindor 

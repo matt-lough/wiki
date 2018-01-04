@@ -1,13 +1,22 @@
-## POA Network Wiki
-- [POA Network Resources](https://github.com/poanetwork/wiki/wiki/POA-Network-Resources)
-- [POA Network on MetaMask](https://github.com/poanetwork/wiki/wiki/POA-Network-on-MetaMask)
-- [POA Network on MEW](https://github.com/poanetwork/wiki/wiki/POA-Network-on-MEW)
-- [POA Network on Ledger/Trezor](https://github.com/poanetwork/wiki/wiki/POA-Network-on-Ledger-Trezor)
-- [POA Network on Trust Wallet](https://github.com/poanetwork/wiki/wiki/POA-Network-on-Trust-Wallet)
-- [Bootnode Setup](https://github.com/poanetwork/wiki/wiki/Setting-up-Bootnode)
-- [Validator Setup AWS](https://github.com/poanetwork/wiki/wiki/Validator-Node-on-AWS)
-- [Validator Setup Non-AWS](https://github.com/poanetwork/wiki/wiki/Validator-Node-Non-AWS)
-- [Deleting a Node](https://github.com/poanetwork/wiki/wiki/Deleting-a-Node)
-- [Governance Process](https://github.com/poanetwork/wiki/wiki/Governance-Process)
-- [Master of Ceremony Setup](https://github.com/poanetwork/wiki/wiki/Master-of-Ceremony-Setup)
-- [Frequently Asked Questions](https://github.com/poanetwork/wiki/wiki/Frequently-Asked-Questions)
+## Getting Started
+- [Installation](https://github.com/poanetwork/wiki/wiki/POA-Installation)
+### Wallets
+    - [MEW](https://github.com/poanetwork/wiki/wiki/POA-Network-on-MEW)
+    - [Ledger](https://github.com/poanetwork/wiki/wiki/POA-Network-on-Ledger)
+    - [Trezor](https://github.com/poanetwork/wiki/wiki/POA-Network-on-Trezor)
+    - [Trust](https://github.com/poanetwork/wiki/wiki/POA-Network-on-Trust-Wallet)
+- [Exchanges](https://github.com/poanetwork/wiki/wiki/POA-on-Exchanges)
+- [FAQ](https://github.com/poanetwork/wiki/wiki/Frequently-Asked-Questions)
+## Roles
+### Validator
+    - [AWS](https://github.com/poanetwork/wiki/wiki/Validator-Node-on-AWS)
+    - [Non-AWS](https://github.com/poanetwork/wiki/wiki/Validator-Node-Non-AWS)
+- [Master of Ceremony](https://github.com/poanetwork/wiki/wiki/Master-of-Ceremony-Setup)
+### Full/Boot Node Operator
+    - [AWS](https://github.com/poanetwork/wiki/wiki/Bootnode-Setup-AWS)
+    - [Non-AWS](https://github.com/poanetwork/wiki/wiki/Bootnode-Setup-Non-AWS)
+## POA
+- [Papers](https://github.com/poanetwork/wiki/wiki/POA-Network-Papers)
+- [What is POA](https://github.com/poanetwork/wiki/wiki/What-is-POA)
+- [Governance](https://github.com/poanetwork/wiki/wiki/Governance-Process)
+- [Role of Validator](https://github.com/poanetwork/wiki/wik•i/Role-of-Validator)

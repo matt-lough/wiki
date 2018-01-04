@@ -21,7 +21,7 @@
     - November 17 at 9am PST
 
 8. Will POA be on EtherDelta Exchange?
-    - No it will __NEVER__ be on EtherDelta as POA is NOT a ERC20 token. It has its own network & blockchain and will be released to regular exchanges, not one based on ERC20 tokens only.
+    - No it will __NOT__ be on EtherDelta as POA is NOT a ERC20 token. It has its own network & blockchain and will be released to regular exchanges, not one based on ERC20 tokens only.
 
 9. When will POA be on an exchange & what exchanges will it be listed on?
     - Due to the nature of the agreements and NDAs, we really can’t talk or even hint at what exchanges POA will be listed on, or when they will be listed. As soon as we can announce the exchanges, we will do so in all our social channels so everyone can find out at the same time.

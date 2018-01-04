@@ -4,7 +4,7 @@ If you create mining node again later, you will need them again.
 
 1. open [Azure dashboard](https://portal.azure.com) and click on name of the resource group you created for the mining node
 
-![ClickOnResource](https://github.com/poanetwork/wiki/tree/master/docs/deleteNode/DelNode-ClickOnResource.png)
+![ClickOnResource](https://github.com/poanetwork/wiki/blob/master/docs/deleteNode/DelNode-ClickOnResource.png)
 
 **if you don't see a box like this**, it is possible that you forgot to check "Pin to dashboard" checkbox during installation.
 In this case, click "Resource groups" on the left sidebar. A list of all your resource groups will be displayed, select the one you created for the mining node:
