@@ -25,13 +25,13 @@ Note: _url on the screenshot below is just an example_
 ### Importing of keys
 1. Click on the account icon in the right upper corner, and then on "Import account"
 
-![Step3](./docs/metaMaskConnect/DefaultMM_Step3.png)
+![Step3](https://github.com/poanetwork/wiki/blob/master/docs/metaMaskConnect/DefaultMM_Step3.png)
 
 2. In "Select Type" dropdown choose "JSON file" option. Then click on "Select file" and browse your filesystem to locate the keyfile. Enter password for the keyfile and click "Import".
 
 Note: _name of the file on the screenshot below is just an example, it will be different in your case_
 
-![Step3](./docs/metaMaskConnect/DefaultMM_Step4.png)
+![Step3](https://github.com/poanetwork/wiki/blob/master/docs/metaMaskConnect/DefaultMM_Step4.png)
 
 3. Click on the account icon in the right upper corner again and select the newly created account (usually the newest one is the lowest one in that list, however you should check the address `0x...` field below account name).
 

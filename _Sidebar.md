@@ -1,5 +1,5 @@
 ## POA Network Wiki
-- [POA Network](https://github.com/poanetwork/POA-Network)
+- [POA Network Resources](https://github.com/poanetwork/POA-Network-Resources)
 - [POA Network on MetaMask](https://github.com/poanetwork/POA-Network-on-MetaMask)
 - [POA Network on MEW](https://github.com/poanetwork/POA-Network-on-MEW)
 - [POA Network on Ledger/Trezor](https://github.com/poanetwork/POA-Network-on-Ledger-Trezor)

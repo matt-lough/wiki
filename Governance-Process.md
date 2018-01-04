@@ -1,6 +1,6 @@
 ## Governance
 
-1. Import your payout and voting keys to POA plugin (See [Importing of keys](./MetaMask-connect.md#importing-of-keys)): browse keystore files and enter passwords for the keys
+1. Import your payout and voting keys to POA plugin (See [Importing of keys](https://github.com/poanetwork/wiki/blob/master/MetaMask-connect.md#importing-of-keys)): browse keystore files and enter passwords for the keys
 
      a) received from [Ceremony Dapp](https://poanetwork.github.io/poa-dapps-keys-generation/) , if you are invited person
      
