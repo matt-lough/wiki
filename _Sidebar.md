@@ -7,7 +7,7 @@
         * [Trust](POA-Network-on-Trust-Wallet)
     * [Exchanges](POA-on-Exchanges)
     * [FAQ](Frequently-Asked-Questions)
-* Network Roles
+* Roles
     * [Master of Ceremony](Master-of-Ceremony-Setup)
     * Validator
         * [AWS](Validator-Node-on-AWS)
