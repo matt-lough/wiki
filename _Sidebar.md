@@ -1,6 +1,7 @@
 * Getting Started
     * [Installation](POA-Installation)
     * Wallets
+        * [MetaMask](POA-Network-on-MetaMask)
         * [MEW](POA-Network-on-MEW)
         * [Ledger](POA-Network-on-Ledger)
         * [Trezor](POA-Network-on-Trezor)
