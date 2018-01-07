@@ -69,7 +69,7 @@ Sustainability emission will be governed by decentralized apps.
 
 Emission rate. 
 X-axis - %, Y-axis - Years
-![](https://i.imgur.com/D0YfrON.png)
+![](https://github.com/poanetwork/wiki/blob/master/assets/imgs/poa/papers/whitepaper/emission-rate.png)
 
 
 ## Use Cases
@@ -156,7 +156,7 @@ All keys are generated on the client side and not transmitted over the Internet 
 
 Initial ceremony is a required procedure to start a new network based on POA Network's ideas of independent validators.
 
-![](https://i.imgur.com/WrfRIUB.png)
+![](https://github.com/poanetwork/wiki/blob/master/assets/imgs/poa/papers/whitepaper/initial-ceremony.png)
 
 [](http://sequencediagram.org/index.html?initialData=FAQwxgLg9gTgBAWRAZwgU3lAZnAwhtAWygDsBPUSWOANRABsBLAExGnmFYhACMU04AGUao42WgxZtYyYBEYR6AgJIkFjBnDAFi5YMCSoMYnPhhFSZALQA+Q+kymdlgFwBxNCQxsBAdwZKEHAgzMzmyMhoyAA0ADokAA4wjABuPnAA1mhkMSAkzHAJKMi+sMzIcFiw8QCMAExwaUxcMgYoDiZ4zuS2wqLidM3SMMguAMqeBRAAHnC+CgAWcwFoQSFhURXiII2SLTCU8mnoQiJBA3vDsiRQJ8kA5gvnOH3PEkPso7gLaGAZcBAFmw4CQAK6EHjGcTxJpST5wAA8cHqbSMji65l0ZARVlenUGcJkLlwpCwjBghABQKCsP2ywq6zQzE4aHAR3SeIuH1a9ihTkxllsBP240mhWSxwEWTIwXyhWKpRgzOYrMgqQ5Z3xl0+wGFwyF2tg7k83hO-nogWi4vVJ2lVqKEUVzHiVXghEYahI93tIDIUFBECtKVuHvumWyyAAdLrDTBepquYSRqK5TM4MhGPcvAV5oC4B71JppQCoHBzAl6OA0PEC-Ii9k5os4PcTTAfAVpRVDjaBJycHqdX33knkAbuTAXHhSeTKYDgZ25gRgqEmSy2T3Tv1+7HkEA)
 
@@ -172,7 +172,7 @@ Proof of Identity DApps is a series of decentralized applications focused on con
 Using Proof of Physical Address, a user can confirm his/her physical address. It can be used to prove residency.
 #### Typical workflow for Identity DApps on PoPA example
 
-![](https://i.imgur.com/weYdtuI.jpg)
+![](https://github.com/poanetwork/wiki/blob/master/assets/imgs/poa/papers/whitepaper/proof-of-address.png)
 
 
 [](http://sequencediagram.org/index.html?initialData=C4S2BsFMAIAUCcD2iBm1VwBYE8DOIBjAQ3GgEEATC+SXXAKHqIOEXmgFVdJ56AHIvFAEQAgHbBoAETJ8+0AO6QARv0HDRRCdNnzu8AG496FIsCLKi3aAGUeR9lIBCaoYU3aAwognxmkslgASRMzCysYb19-W1Y-AHNIVw1xSVhEXEl9A0Ik+mVEAA90B059AC5oILFMknBcaABZSHNGqwBrei4eaABaAD4ZOUUVcvoh+SVlAYnobJ5KmwBXZQBbMGgiKho6aBQ2VYAaAB0xFsxN7doGAuLEUtn5+HKANRIQU2AYADJoMQP3gAvGAgMR8JbAfJFEo9R72BbQADikDOfi+0AIPhQIHgqzMIB8GMQFBgAAoCAQAJTjXRzeHwAZ2QywpyVbh0AliaDtSDYaCk3DtSmnADUGIIoug50u1GuTBYIAMZhgTIeLluMMctKeixA8S5Aj8qxaPAYcOZDMGtKmiwAEmQAMzkqmSwWuvViMxLGiS-64oGQCjQUHgyH+RXKnTDKY06MqAZRYB+FjkYKVAAqAA1Kp46tAaPEQJkeAB9Layuik8s7XDUjX3HqJ5MBNPQN7gD6R-D6r00KF3UpNmKBII5zCQAjtGU1qWFIvABhDlMjhM+JMxGxxIiJRZEIzT66Smz2p0U4ViMXS6uHi-QZTgRCTv5LVbKYzhpXopeSTdsbdJb9UyCGZrVGaBgEKEsPljSZ4ytYYdXAyCPldToSQ-SNZhjc0HEZelpFZOZOlVFkQIQ+lKgpSUryuOh+01KM9Ao6BPHHSdTgggA6FAkFWaAAF5+KlYALmvOgOMKTjWAEoTMWiFNEAUVEYLpC1V3kltR2gAAxUEgzEhoC3nHhA1OAABJDOPvR92gAORfN9eEAld4KYi1KkoCsGk+IgVKeAZ0kyVScgISBKJoZUSz4DJgGIeAgyrWjcEOcVqXQhVPxVfDnHoQKsnsXIBm6Z5pEgDtSmizI4ooLp9DI2DlDGLC4Oc1ssxzPMlQ7T5IBLOTsX9UAfD64lIGdOtoQbdhWq03SxH0pLTgUMALjxWLMFBeJxXoGb1PXFNfwSMKWKxeAQFWRh6CAA)
@@ -206,7 +206,7 @@ After the first transaction is mined, the server sees for itself what address wa
 This is prevented by removing the session code from memory after the first postcard is sent.
 
 ### Proof of Bank Account DApp
-![](https://i.imgur.com/S2k1WLn.png)
+![](https://github.com/poanetwork/wiki/blob/master/assets/imgs/poa/papers/whitepaper/proof-of-bank.png)
 [](http://sequencediagram.org/index.html?initialData=C4S2BsFMAIAUCcD2iBm1XQEIEMB2BraAQQGMTEBXXYAKBuxOEXmgFUBnSeGgB23lAkQfatAAiRHj2gB3SACNe-QcLzBxk6Z3gA3LjQAm2YNnnZO0AMpc9LMZiUCQQkeoDCiavAbqisAJKGxqbmMB5ePlZM3gDmkI4qrlh4hH6BNPKIAB7otmzaAFzQ-rjsJuDg7NAAspAm1eb4NBxc0AC0AHwSUrIKRSTwkAaQ1CDYlTTd0nLynTgExAFF2BTAABYjgsYwFNo086kBnVO98stkkOxVTPgjk5qnxw-atuckl9eIt7gAOrgA1NAGOQqOpcBQALbyLh-QF1NZAgwGQZXDLZXKtE4vLhFABq4xARmAMAAZNBcMwIQSAF4wEC4Hire49bHwOYpRb+IoAMTqJARwMoonBUK4VXkAE8gRcrtAbncDpyniybDjiGQhWDIdD4Ow0TlEHksar4EU3BsSIRgR85YhpSDhdr9JkDUbniaigiALxWAASRAAzAAKeGI5EfWHQMwLEU6yOC0Hkp3wACU+oxdndujVlhAMVw0ARzK0JvaHQ0PRmRXYedwxgog3jGsTsZhAKjHLrEPiJxmZeg4WA3kYnKKABUABpm8bgaCDGIgMpcAD6Ceoy9b3BdGYHniHkTSeIJRJgNfz9cG6cNrUHw98SwHFqtzcdopYkCyi9ot4PRw6P5HSxomwOJq2wPRoFDbAkRRdhI2jQgu0gJsHS1N8aCAA)
 
 In contrast to other identity DApps, PoBA is (from the contract's point of view) a one-step verification process.
@@ -233,7 +233,7 @@ This is equivalent to either hacking someone else's computer or the account's ow
 
 ### Proof of Social Network DApp
 
-![](https://i.imgur.com/9zlkg43.jpg)
+![](https://github.com/poanetwork/wiki/blob/master/assets/imgs/poa/papers/whitepaper/proof-of-social.png)
 
 [](http://sequencediagram.org/index.html?initialData=C4S2BsFMAIAUCcD2iBm1XQMqIMYgIbjQBykwA7ovANYBQt+OwV0AqgM6Ty0AO+8oPHwB2waABEAgjx7RykAEa9+gkCLFSZ0TvABuXWgBN8wfAvycsXffAkAhZQJBD8o6AGFEo+IzGTYAJJGJmYWMJ7evljMPgDmkI6q6li4BETCZJQ09AqIAB7oNmw6AFzQAcLspuDg7NAAsmT49RZ0HFzQALQAfJqy8gpltH1yij0jOjZlmACuCgC2YNqphNAZFFTU0DxIKCBQ0AAU7MI8AJTQ4CDCdLkFiEUT1lxlAGqEIMbAMABka1TzD4ALxg1x4M2AtDuhQ6Tz0L2gAHFIBkfN9oDgvHt4IDQF4MYhDDBDjgcGdhtJZJMuD1MM9bOI7GVOOx2CB8dRIABPI7sahnAA6wgA1BicELRWQABbQfCGQzwSCshhMEC6EwwOnwhkOaEPWGU7T06YgWLCbb8fDzMhcdgUrTU+DjQ0DaYACUkAGYSWSJdpqH62WaTDNFX7hADgZBDNAwRCVaB1eiRgN7f0xt0IsAfExoP4AmUACoADTK7kIREVsRAVS4AH0dqh9pBjqdyXqilmc35Am8Pl8YEHhCHFVD8jDbF2ovmy1LIDgtidZJA8jXgHap7n8z1N2JMDF8PFpvh9NpTn7MB7vaTBSLoNLZfLFay-QpwLgtsIZvMFAZfGqNQ8LxsyifcqEPBJdzzQJnS0V1oGAPI60+NNRgUWCqWNBCkM+QM6CJf8kxgFNFFQx1aXpexmToLVHjsDCjW1MpST9B85QVJU7QI1UiKsbV7DHe5HkNR1Z3nANRDyAA6FAkHmaAAF4FPvYAZXY592CFRCpOYRTlMxSJc0QchUTI+kd2A7toILaAADFrhjJdoCrNcuGjIUAAFsKkt8P2Ib9f24KDt16ESsMwYhYGgL58EEicJDCpjoAAdR8WRSVjUREAJYRsVxdlzR4KUfEsElzjM7UGPgnAeFQgYenaeAhka2kVnSTJNjKFpOW2OYrhwbZECqOQwBlGraBa0K4MUMoEAeT4YCuG4EOy1SYB4IaxHIUaMVqkj0KmzCktmBYljWy5rlucd9QZRKpiwHA0pgc6luoAAaaB1SuAc1g6mhoD+Uk4puhKHXC01zSBuEbCqmbtAhkdID9KGXQzYLe2gEsywrT7+w1OsDLykwCoJwkWxvYHO0s6cMfeb7AKHRHKY6dGbPs4RHPPYRttU6BcRwKVrliMVaFZizDL3A8jyA3L4BAeZ6FoIA)
 
@@ -279,7 +279,7 @@ This is prevented by removing the session code from memory after the first postc
 
 ### Proof of Phone Number DApp
 
-![](https://i.imgur.com/liEff1Y.jpg)
+![](https://github.com/poanetwork/wiki/blob/master/assets/imgs/poa/papers/whitepaper/proof-of-phone.png)
 
 
 [](http://sequencediagram.org/index.html?initialData=C4S2BsFMAIAUCcD2iBm1XQLKIEYinABaIB2kAUOQIYDGwi80AqgM6TzkAOV8oNI3EsGgARAIKdO0AO6QcXHnwFUhoiVLbwAbu3IATKsCo4qbaAGV2OxiIBCC3iH6DhAYVLB4tYWNgBJfUNjUxh3IS86C3ovAHMKbkdnFWFzTHNoXwDyHEQAD3RrZk0ALmg-EhYjcHAWLEgjTFMAa3JWdmgAWgA+cUkZOWLyXqlZHG7h6E1rUvMAVxwAWzBoTmIyaBJZhZx2ABoAHTJgQmgqPT14SBYWbLyC9omp9mKANSpwEANgGAAyDYYFu8QAAvGAgEicWbAW75RCFR5WZ7QADikDIXm+0BopBQIHggNApCxiD0MAAFDQaABKIbqSaI+DdSzaB62Upsa4gIlNSAAT2gZJYTSphwA1FiaGLoPUTmcLlcbt4QFpDDBmfD7DlYfC6U94DMQDESCseFQFvV2DcESzGT06aMZgAJMQAZgp1KlQs9hpIhlmlylJABQNBemg4Mh0KVKsxE1GtL6o26YU83gy-lKABUABqlVzvcDQS4xECVdgAfVWpEgZKrZBpWvujBTER8Gegbw+XxgLB9fsuMKb0BbacyecIkBoTRWaxgkFypeANxHkUyyY8raiDCocRmVB0M+rUvMzrdlJFJHFMtO50u1ylOHAiCnGy2Ow40dVw43afM0R3FArm2fjjPaAzQMAuTlp8CYjHIoF9HqpSQdBeiei0pKfrGYHyNa1hMgyohspMLTqqyCEaAypSUlK15yneNyNnCDy6lRw4TlOhyQQAdCgSALNAAC8gnSscN7yveQi5Nx9BCSJ2LhGmiDSOisH0ja66Kau7YAGLgmGdYwMWi7sJAaEkAAAhB0mPs+TQAHJvroQHpiBdqIWxYi3gq0BfFQal6kyaSueyaJ6OWLALLUtazrsEo0phdDKl+ZE2PYqTpGuXRtPqoiQB8hQZa0mgUf0OCDHG8FdC5Y7QDmeYFtAKpdqq5YKbi+KGFyJBtSSNbnoOzHNj+2l+KUekkAZs6HNIYAnASNCEOCMQSuQNX+JpqaRH+267t+JB8SACzkEAA)
@@ -319,7 +319,7 @@ This client-side DApp provides the list of existing ballots with the ability of 
 
 The governance is available only with a valid voting key that should be selected in the MetaMask Google Chrome plugin.
 ### Creating a new ballot
-![](https://i.imgur.com/BybpYqy.png)
+![](https://github.com/poanetwork/wiki/blob/master/assets/imgs/poa/papers/whitepaper/new-ballot.png)
 
 [](http://sequencediagram.org/index.html?initialData=C4S2BsFMAIHEHsBukBOA7AhmgxpAXNAEYbjjzDTYqQajxoBQDG2w8K0AqgM6oMAOGFKGwhBaCgBEAgv37QA7pEIChIsVgoBhesBQsK0gAoBJBgBNaGYr2g6J+1tG5t9Ac0hMUheAA9oSKhcvCgEIGguJODc0ACykMAYsRjcANYMPEEAtAB80DJyisoE8PyQEURR5JTUtCD00IIezKwgiLQwBfJKKpkcADxZWfmy3cWVpOQA5DFUNHRo0ABm7AC20CAx5pv84BgAnpDmGSHQuSOFPQRLIKQxxJPAMxtoKwA0lOAg2KkxgDgEACoAfZQGgAK6QIGAXAIGGhyDAUCA3AALCjwJYXMaEMIYsAbGJwxIofbPVbhcJuaCpSD7fHQDBLJaQVhHD4AHVea2W7GWty+aEphKEJJiZRQ3HoJGglkSdIwcho1GOfWgg2GXSK2OgQuJzzFEsw4GlVm5KHWKw4N1IFLp224uwORxO2TyGquvLu2vIwr1qANUplGAYbuUZxyIMchlMBGwUVmukj0FWCWR8HM0DY9PM6Y5aEgCgmZAo4Uz2ATBmcrgwzQMbQ6dnLTmMZhVaojFebBHiiWSaXpUGEtp2e0O6YUYGRGf0EVrDXCK2dHFy7ab0co9BuZpiwGRMD0WG4s8YhIRSNRAQxK6jJhju5+3A+IAx7S+6cQ5Bt1P2DCv0GbYYbBwKxcdhq3wQtqk2ZwMGQdNwkA-dWBaUB2mAGBfxA9xPBPAJkA4X9mw+DCqw8AggQAenIk9KKBAgdxgZMdzTfsJUoO9fnZNAn3pNBaQeIsYiEGAbi47hd3MD5CDBChCWgQ4KBEkgQAALyOaBoA5QhaXoygwRQagJAzEBkwAOmgEwMSwfZHwU8IlN4bdd1WEzmHAYtLMZZk0PTL98TQQBMAhk71dRiMkuIFKkaWDUZNVVIZiNA0i7FqbyIOLQSFSEuDFh0r4XAYSBok8ENCDDBKsJjON1yApxGNTdNMwwbNyLBfgZRgXNgv2fzRT9SUjUDF5S0bChMLAxc4qyAi127JIUlSftUHS6Vh0dMcJynA8jxeBcVWXEa-zXMtXhALcM13TaZ1aegfwO-9znKsCCB1brevFfrjVlKDD1gl4EMjaLLlDNsDrGpKtBStT+MgjKyiyv7cs2YACrQY5zBoVpUM6GKegsDGUPraazHR2ssf+4CSM8BggA)
 Valid notary of the POA Network fills out a form in DApp providing:
@@ -333,7 +333,7 @@ If the affected key type is mining key, the user will be asked to provide person
 At the final step, one transaction to create a new ballot in POA contract will be pushed to the blockchain to add a new ballot after the user presses "Continue" button. It should be noted, that in case of a mining key, it will be two consistent transactions: to add personal data of a notary and a new ballot to contract. User will see MetaMask popups equal to the number of transactions. After the confirmation and successful mining of the transaction by existing validators, the user will see the created ballot in the list and be able to vote on it.
 
 ### Voting on a ballot
-![](https://i.imgur.com/OmAxHw6.png)
+![](https://github.com/poanetwork/wiki/blob/master/assets/imgs/poa/papers/whitepaper/ballot-voting.png)
 
 [](http://sequencediagram.org/index.html?initialData=C4S2BsFMAIHEHsBukBOA7AhmgxpAXNIvKGgOYBQ5G2w8K0AqgM6rkAOGKo2IHaw0ACIBBNm2gB3SACN2nbrywCAwvH4pqA4QAUAkuQAmGYBmkYW0Ves3QmtDaUiUU0+AA9oSVIxYoCINDsMcHAmaABZSBNw8wBrcmZvAFoAPiFRcSlpAmxwEGxYsIAqIoBXTECpFEgDEugAMxBwYFZNEERjGBExSRkE32gAHiSk9J6sggAVAAsYPLtPeuhyrCYqmugzEOIwkDCDPbZwDABPGv7ktO7MmRy8grCAIhKANWIYNHgJEsfN0uBaGhPECtuBiAByMLYTgGaABaDAWbQebAC70Yaja69bKbYJg4CQ6AcRxwsLwNiQNDnRL0VJjG443L5QrQZ5FN4tBp0H6eehsjkwDCkDABOw86T-QHkLFZaCpKzADQ0aA6XQ5PFQtSKmwAWyi03gsIAOvx4NBqNh4OUBKVfIBMAjCRHyTjaHU5CqVWj0aKGIw9NlVBEi0Ti5qgXFJ0AOTCOpw2EjA0wRGkCbTUcLQ9XgPvlWs9Kr0OTUjRQOrCiJg2tTNBAanIn05KBApGmAngS39ysD0GwsweABo4UsOnlYUQSKRoLFICd6+9oE2W22O3mA4We33CoOQEtQcRI66nJ2vbo5Wlj7Z7EL8LjtsAHYRiAFJ0FQHZ8mETXtlmwjC1YfCx5UDWbowBedh0Nec6cl49AXqqg7gVejgECUAD0aENpAGElAQFbQHqiKGmGTBmr2kADtAX5LFgJy3viYScDAjRoHsswGIOEoCA20BnAILHBCAABeGxUWg0h0fh2ClCg1T8AiIB6gAdNAug0WgJzbvxASCSw5azDqSnShk2K+kkSGQSh0AAEJ4vu37RhgYiQExsL1Cg8A6ssFRrKgGyNM0qCDuOz6XsYezcLsYSlL+nRuXQcKogYLkgZ09LYoYKWgKBlirl23rJa6aUWQ4kBAA)
 The user can see all his/her unanswered ballots by clicking on the self-titled button on the filtering panel.
@@ -1195,6 +1195,7 @@ install_scripts() {
     cd oracles-scripts/scripts
     npm install
     sudo bash -c "cat > /etc/cron.daily/transferRewardToPayoutKey <<EOF
+
 #!/bin/bash
 cd "$(pwd)"
 echo \"Starting at \\\$(date)\" >> \"/home/${ADMIN_USERNAME}/logs/transferRewardToPayoutKey.out\"
@@ -1286,16 +1287,16 @@ echo "========== AlphaTestTestNet/mining-node/install.sh finished =========="
 
 # References
 
-[^fn1]: Ethereum, A Next-Generation Smart Contract and Decentralized Application Platform https://github.com/ethereum/wiki/wiki/White-Paper 
-[^fn2]: Announcing Kovan — A Stable Ethereum Public Testnet https://medium.com/@Digix/announcing-kovan-a-stable-ethereum-public-testnet-10ac7cb6c85f
-[^fn3]: Kovan proposal https://github.com/kovan-testnet/proposal
-[^fn4]: Parity pushes new Ethereum testnet 'Kovan' after spam attacks http://www.ibtimes.co.uk/parity-pushes-new-ethereum-testnet-kovan-after-spam-attacks-1609901
-[^fn5]: Polkadot, a blockchain technology, a heterogeneous multi-chain. https://github.com/w3f/polkadot-white-paper/raw/master/PolkaDotPaper.pdf 
-[^fn6]: The Keccak sponge function family https://keccak.team/keccak.noekeon.org/
-[^fn7]: Satoshi Nakamoto (2008). Bitcoin: A peer-to-peer electronic cash system https://bitcoin.org/bitcoin.pdf
-[^fn8]: Public versus Private Blockchains Part 2: Permissionless Blockchains
-http://bitfury.com/content/5-white-papers-research/public-vs-private-pt2-1.pdf
-[^fn9]: The Issuance Model in Ethereum https://blog.ethereum.org/2014/04/10/the-issuance-model-in-ethereum/
-[^fn10]: What is Ethereum's inflation rate? (how quickly will new ether be created) https://ethereum.stackexchange.com/questions/12501/what-is-ethereums-inflation-rate-how-quickly-will-new-ether-be-created
-[^fn11]: https://github.com/paritytech/parity/wiki/Aura
+    [^fn1]: Ethereum, A Next-Generation Smart Contract and Decentralized Application Platform https://github.com/ethereum/wiki/wiki/White-Paper    
+    [^fn2]: Announcing Kovan — A Stable Ethereum Public Testnet https://medium.com/@Digix/announcing-kovan-a-stable-ethereum-public-testnet-10ac7cb6c85f    
+    [^fn3]: Kovan proposal https://github.com/kovan-testnet/proposal    
+    [^fn4]: Parity pushes new Ethereum testnet 'Kovan' after spam attacks http://www.ibtimes.co.uk/parity-pushes-new-ethereum-testnet-kovan-after-spam-attacks-1609901    
+    [^fn5]: Polkadot, a blockchain technology, a heterogeneous multi-chain. https://github.com/w3f/polkadot-white-paper/raw/master/PolkaDotPaper.pdf     
+    [^fn6]: The Keccak sponge function family https://keccak.team/keccak.noekeon.org/    
+    [^fn7]: Satoshi Nakamoto (2008). Bitcoin: A peer-to-peer electronic cash system https://bitcoin.org/bitcoin.pdf    
+    [^fn8]: Public versus Private Blockchains Part 2: Permissionless Blockchains
+    http://bitfury.com/content/5-white-papers-research/public-vs-private-pt2-1.pdf    
+    [^fn9]: The Issuance Model in Ethereum https://blog.ethereum.org/2014/04/10/the-issuance-model-in-ethereum/    
+    [^fn10]: What is Ethereum's inflation rate? (how quickly will new ether be created) https://ethereum.stackexchange.com/questions/12501/what-is-ethereums-inflation-rate-how-quickly-will-new-ether-be-created    
+    [^fn11]: https://github.com/paritytech/parity/wiki/Aura    
 
