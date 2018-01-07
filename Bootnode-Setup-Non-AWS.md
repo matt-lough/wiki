@@ -1,4 +1,4 @@
-## How to setup a bootnode on not-AWS.
+## How to setup a bootnode on Non-AWS.
 __*Attention*__    
     All commands to configure and deploy node to POA Networks are done on your local Machine/Virtual Machine. For non-AWS & non-Azure nodes, you MUST create/configure your Remote Virtual Machine's user privileges and SSH key before running `site.yml` script.
 

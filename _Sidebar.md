@@ -13,7 +13,7 @@
     * Validator
         * [AWS](Validator-Node-on-AWS)
         * [Non-AWS](Validator-Node-Non-AWS)
-    * Full/Boot Node Operator
+    * Full Node Operator
         * [AWS](Bootnode-Setup-AWS)
         * [Non-AWS](Bootnode-Setup-Non-AWS)
 * POA
