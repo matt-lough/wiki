@@ -8,7 +8,7 @@ POA Network will be bootstrapped with 12 Validators and grow to a set of 25 Vali
 
 Validators earn POAs as for block provisions through the execution of the AuRa PoA consensus protocol.  The amount of POA is based on the emission rate of the network, currently 2.5%.  If a Validator doubles signs, are frequently offline or does not participate in governance of the network they can be removed from the POA Network by the other Validators via a ballot and voting process.
 
-To summarize, a Validator has both technical responsibilities, running and maintaining an POA Network node instance, as well as social responsibilities, participating in governance of the network and cultivating awareness and proper skill set maintain the security and health of the POA Network.
+To summarize, a Validator has both technical responsibilities, running and maintaining an POA Network node instance, as well as social responsibilities, participating in governance of the network and cultivating awareness and the proper skill set to maintain the security and health of the POA Network.
 
 Further details concerning Validators can be found on the Validator FAQ here (<TBD>).
 
