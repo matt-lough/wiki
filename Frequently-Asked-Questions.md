@@ -1,4 +1,5 @@
-### About the token sale
+### Questions on POA Token Sale and Trading
+
 1. How many POA tokens were sold during presale?
     - 176,722,560 POA
 
@@ -23,6 +24,9 @@
 8. What was the minimum buy-in during presale?
     - 100 ETH
 
+9. When will the token sale take place?
+    - There will be __NO__ Token Sale since all tokens were sold during presale.
+
 9. Will POA be on EtherDelta Exchange?
     - No it will __NOT__ be on EtherDelta as POA is NOT a ERC20 token. It has its own network & blockchain and will be released to regular exchanges, not one based on ERC20 tokens only.
 
@@ -31,3 +35,12 @@
 
 11. Are we allowed to trade POA in POA's Telegram channel?
     - No, it is not allowed and OTC trading is not recommended in general because of many scammers out there. Please wait until it hits exchanges, all information will be pinned to the top of the Telegram channel and posted to social media accounts.
+
+12. Where can I find more information about POA?
+    - You can check the [What is POA](What-is-POA) section of this Wiki.
+    - POA.Network Official [Forums](https://forum.poa.network/)
+
+13. Where can I get latest POA announcements?
+    - All announcements will be pinned to top of [Telegram](https://t.me/joinchat/FlX0FD_ndCsB4_n60sCu2w) chat.
+    - Follow @poanetwork on [Twitter](https://twitter.com/poanetwork/).
+    - Follow @poanetwork on [Medium](https://medium.com/@poanetwork).
