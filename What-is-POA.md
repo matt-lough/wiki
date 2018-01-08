@@ -13,6 +13,7 @@ The three main conditions that must be fulfilled for a Validator to be establish
 The final layer in POA Networks is Governance, a collection of DApps where ballots are proposed and voted on by Validators to manage the network. This includes:
 * Adding new Validators
 * Removing Validators, i.e. for compromising security of network, malicious behavior, non-participation in Governance
+* Updating/swapping of one of more Validator keys
 * Changing the Approve Ballot Threshold
 * Changing Consensus Proxy Contract
 
