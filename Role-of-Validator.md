@@ -1,4 +1,4 @@
-What is a Validator
+## What is a Validator
 
 The POA Network is a Proof of Authority consensus based on AuRa protocol, which relies on a well known set of Validators that are responsible for committing new blocks in the blockchain.  The Validators participate in the consensus protocol by broadcasting votes which contain cryptographic signatures signed by each Validator’s  private key.   
 
@@ -12,7 +12,7 @@ To summarize, a Validator has both technical responsibilities, running and maint
 
 Further details concerning Validators can be found on the Validator FAQ here (<TBD>).
 
-# Becoming a Validator
+## # Becoming a Validator
 
 <Are we still on hold for new Validators?>
 If you are interested in becoming a Validator and hold a public notary license, you can declare your interest in being a validator by posting to Validator forum here ( https://forum.poa.network/c/notaries-intro ).   Please include a picture, a short background, your interest/motivation in POA Network and links ( LinkedIn, GitHub etc … ).
