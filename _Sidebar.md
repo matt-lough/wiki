@@ -16,6 +16,9 @@
     * Full Node Operator
         * [AWS](Bootnode-Setup-AWS)
         * [Non-AWS](Bootnode-Setup-Non-AWS)
+* Hard Forks
+    * Sokol
+        [2018-01-08](HFs-Sokol-2018-01-08)
 * POA
     * [Papers](POA-Network-Papers)
     * [What is POA](What-is-POA)
