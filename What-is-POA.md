@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-## Proof of Authority
-=======
 # What is POA?
 
 POA is both the name of the Network and the underlying token and refers to Proof of Authority (PoA) Consensus  algorithm used by POA Networks.  In general, PoA is a consensus mechanism where a list of trusted authorities represented as accounts or nodes on the network are responsible for validating transactions and blocks.  In POA Network, Proof of Authority (PoA) is functionally a modified form of Proof of Stake (PoS) where instead of stake with the monetary value, a validator’s identity performs the role of stake. 
@@ -51,4 +48,3 @@ Proof of Stake eliminates the need to spend a huge amount of electric power to v
 List of references:
 <TBD>
 
->>>>>>> 9009a9a4fd8c3dd0c644268e18595694202149a8

@@ -1,12 +1,3 @@
-<<<<<<< HEAD
-## What is a Validator's Role
-Validators on POA Network are the known people who validate the blocks. Proof of Authority means that they stake their identity to secure the network. Their identity is subject to a number of verification requirements, including proof of address and no criminal record.
-
-### Built-in Governance
-Validators vote for adding or removing validators using Governance DApp. Thus, the network supports voting at the consensus level.
-
-## Blockchain
-=======
 ## What is a Validator
 
 The POA Network is a Proof of Authority consensus based on AuRa protocol, which relies on a well known set of Validators that are responsible for committing new blocks in the blockchain.  The Validators participate in the consensus protocol by broadcasting votes which contain cryptographic signatures signed by each Validator’s  private key.   
@@ -43,4 +34,3 @@ Key Management
 
 It is mission critical that an attacker cannot steal a Validator’s key. If this is possible, it puts the entire network at risk.   <TBD -- Need to add some guidelines for key management here>
 
->>>>>>> 9009a9a4fd8c3dd0c644268e18595694202149a8
