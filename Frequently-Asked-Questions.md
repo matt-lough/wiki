@@ -48,3 +48,6 @@
 
 14. Does POA have an active block explorer yet?
     - POA Network is a working progress. The available explorers were made by community members and work well until official POA Explorers are released. You can find all the resources on the Wiki [Home](Home) page.
+
+15. When will the next Newsletter be released?
+    - The newsletter is worked on by multiple POA team members in different time zones. Newsletters will be released periodically as there is news to publish. After being completed, still needs to be proof read and send for approval. Please, do NOT keep asking "When Newsletter?".
