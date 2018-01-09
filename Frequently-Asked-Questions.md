@@ -44,3 +44,7 @@
     - All announcements will be pinned to top of [Telegram](https://t.me/joinchat/FlX0FD_ndCsB4_n60sCu2w) chat.
     - Follow @poanetwork on [Twitter](https://twitter.com/poanetwork/).
     - Follow @poanetwork on [Medium](https://medium.com/@poanetwork).
+    - Join the POA Newsletter, Sign up @ [POA.Network](https://poa.network/) Homepage.
+
+14. Does POA have an active block explorer yet?
+    - POA Network is a working progress. The available explorers were made by community members and work well until official POA Explorers are released. You can find all the resources on the Wiki [Home](Home) page.
