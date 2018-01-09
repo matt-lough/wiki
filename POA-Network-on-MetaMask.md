@@ -40,6 +40,3 @@ Note: _name of the file on the screenshot below is just an example, it will be d
 
 * Google Chrome v 59.0.3071.115+
 
-### Installing of POA Network plugin
-Get [Google Chrome plugin](https://chrome.google.com/webstore/detail/oracles/jbdaocneiiinmjbjlgalhcelgbejmnid) from POA Network.
-
