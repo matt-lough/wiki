@@ -21,7 +21,10 @@ For a deeper look into existing consensus algorithms and how they compare with P
 
 Proof of Work requires that a certain amount of computational work to be done to solve an arbitrarily difficult mathematical cryptographic puzzle.  This effort is called mining and the probability that one mines a block is proportional to hashing power. In turn hashing power is a function of hardware, network access and energy. In its current state PoW is not only computationally expensive but also grossly inefficient with respect to energy consumption ( see: [PoW PowerCompare Report](https://powercompare.co.uk/bitcoin/) ).  These factors incentivize miners to centralize hashing power rather than creating a truly decentralized network where anyone can participate.  In fact, miners have consolidated into small set of large mining farms or large mining pools and act as defacto authorities on the network.
 
-In addition, to the energy consumption, current PoW networks don't scale well, have low transaction throughput and variable block generation times.
+In addition, to the energy consumption, current PoW networks:
+* Don't scale well 
+* Have low transaction throughput
+* Variable block generation times
 
 
 ### POA compared to Proof of State/Delegated Proof of Stake  ( PoS/dPoS )
