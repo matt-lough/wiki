@@ -6,7 +6,7 @@ A Validator is an independent individual who stakes their identity and is entrus
 
 A Validator has both technical and social responsiblities both of which are important for the health, performance and security of the network.  
 ### Technical Responsibilities:
-* Ensure node is secure by practive safe key management
+* Ensure node is secure by practicing safe key management
 * Maintain node requisite software version
 * Monitor node to ensure availablility and participating in consensus
 ### Social Responsibilities:
