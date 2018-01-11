@@ -16,6 +16,7 @@
     * Full Node Operator
         * [AWS](Bootnode-Setup-AWS)
         * [Non-AWS](Bootnode-Setup-Non-AWS)
+    * [Non-AWS Node Setup](Non-AWS-Node-Setup)
 * Hard Forks
     * Sokol
         * [2018-01-08](HFs-Sokol-2018-01-08)
