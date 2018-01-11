@@ -24,7 +24,7 @@ _Published:_ **December 14th, 2017**
    - 3.6 [Low Priority](#36-low-priority)
    - 3.7 [Notes & Recommendations](#37-notes-recommendations)
 - 4. [Documents & Resources](#4-documents-resources)
-   - 4.1 [Line-By-Line Comments](#41-linebyline-comments)
+   - 4.1 [Line-By-Line Comments](#41-line-by-line-comments)
    - 4.2 [Project Code](#42-project-code)
 - 5. [Conclusion](#5-conclusion)
 
