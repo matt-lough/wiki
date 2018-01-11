@@ -26,7 +26,7 @@ A Validator has both technical and social responsiblities both of which are impo
 
 ## Eligibility Requirements for Core
 * Be a notary with a valid license
-* Actively participated in governance on testnet
+* Actively participated in on-chain Governance on testnet
 * Write a post about yourself in Validators Intro section of forum with links
  
 ## Eligibility Requirements for Testnet ( currently Sokol )
