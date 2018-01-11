@@ -24,8 +24,11 @@ A Validator has both technical and social responsiblities both of which are impo
 * Participate in POA Network Community Forum
 
 
-## Requirements:
-* Possess a valid notary license in state of residence
-* No familial affiliation with another Validator
+## Eligibility Requirements for Core
+* Be a notary with a valid license
+* Actively participated in governance on testnet
+* Write a post about yourself in Validators Intro section of forum with links
  
-
+## Eligibility Requirements for Testnet ( currently Sokol )
+* Be a notary with a valid license
+* New Validator applicants eligible ( [apply](https://forum.poa.network/c/notaries-intro) )
