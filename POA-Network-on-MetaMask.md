@@ -35,7 +35,6 @@ Note: _name of the file on the screenshot below is just an example, it will be d
 
 3. Click on the account icon in the right upper corner again and select the newly created account (usually the newest one is the lowest one in that list, however you should check the address `0x...` field below account name).
 
-### POA's Version of MetaMask Plugin
 #### Supported browsers
 
 * Google Chrome v 59.0.3071.115+
