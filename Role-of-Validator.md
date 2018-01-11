@@ -32,3 +32,8 @@ A Validator has both technical and social responsiblities both of which are impo
 ## Eligibility Requirements for Testnet ( currently Sokol )
 * Be a notary with a valid license
 * New Validator applicants eligible ( [apply](https://forum.poa.network/c/notaries-intro) )
+
+
+## Background/Further Reading
+* [Introducing POA Network](https://medium.com/oracles-network/introducing-oracles-network-864d1d7e37e2)
+* [POA Network Eco-System](https://medium.com/oracles-network/introducing-oracles-network-864d1d7e37e2)
