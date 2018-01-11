@@ -11,6 +11,16 @@ A Validator has both technical and social responsiblities both of which are impo
 * Monitor node to ensure availablility and participating in consensus
 ### Social Responsibilities:
 * Participate in on-chain Governace of the network
+
+   Governance is a collection of DApps where ballots are proposed and voted on by existing Validators to manage 
+   the network. The Ballot types include:
+   * Adding new Validators
+   * Removing Validators, i.e. for compromising security of network, malicious behavior, non-participation in 
+     Governance
+   * Updating/swapping of one of more Validator keys
+   * Changing the Approve Ballot Threshold
+   * Changing Consensus Proxy Contract
+
 * Participate in POA Network Community Forum
 
 
