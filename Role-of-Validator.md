@@ -8,7 +8,8 @@ A Validator has both technical and social responsiblities both of which are impo
 ### Technical Responsibilities:
 * Ensure node is secure by practicing safe key management
 * Maintain node requisite software version
-* Monitor node to ensure availablility and participating in consensus
+* Monitor node to ensure its availablility and participation in consensus
+* Monitor network in general and communicate with other Validators, network entities if problems arise.
 ### Social Responsibilities:
 * Participate in on-chain Governace of the network
 
