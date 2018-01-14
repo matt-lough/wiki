@@ -1,6 +1,8 @@
 ## Governance Overview
 
-Governance is the process whereby Validators manage the themselves and the underlying on-chain contracts related to Consensus to ensure the network's security and performance.  Security of the network is a function of the number of Validators on the network, i.e. the network is more distributed.  That said too many Validators would impact the performance of the system.  The goal of POA Network is to maximize the number and distribution of Validators to secure the network and preserve the performance attributes of the network.
+Governance is the process whereby Validators manage the themselves and the underlying on-chain contracts related to Consensus to ensure the network's security and performance.  Security of the network is a function of the number of Validators on the network, i.e. the greater number of Validators, the more distributed the network and thus more secure.  That said too many Validators would impact the performance of the network.  The goal of POA Network is to maximize the number and distribution of Validators to secure the network and preserve the performance attributes of the network.
+
+_**NOTE:**_  It is essential for all Validators existing or prospective to review and understand the POA Governance model, the Ballot types and prepare themselves to ask challenging questions of the proposer and themselves when particpating in a Ballot.
 
 To participate fully on the network a Validator needs to possess 3 keys:
 
