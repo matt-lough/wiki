@@ -23,5 +23,6 @@
 * POA
     * [Papers](POA-Network-Papers)
     * [What is POA](What-is-POA)
-    * [Governance](Governance-Process)
+    * Governance
+        *  [Governance Overview](Governance-Overview)
     * [Role of Validator](Role-of-Validator)
