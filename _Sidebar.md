@@ -25,4 +25,5 @@
     * [What is POA](What-is-POA)
     * Governance
         *  [Governance Overview](Governance-Overview)
+        *  [Ballots -- Overview, Life cycle & Limits](https://github.com/poanetwork/wiki/wiki/Ballots----Overview,-life-cycle-&-limits)
     * [Role of Validator](Role-of-Validator)
