@@ -28,3 +28,4 @@
         *  [Ballots -- Overview, Life cycle & Limits](https://github.com/poanetwork/wiki/wiki/Ballots----Overview,-life-cycle-&-limits)
     * Role of Validator
        *   [Overview](https://github.com/poanetwork/wiki/wiki/Role-of-Validator)
+       *   [Validator Keys and Passwords](https://github.com/poanetwork/wiki/wiki/Validator-Keys-and-Passwords)
