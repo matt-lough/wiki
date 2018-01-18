@@ -1,0 +1,49 @@
+## Info
+* **Network**: Sokol
+* **Date**: 2018-01-18
+* **Block number**: 509355
+
+## Description
+Problems:
+- During swapping mining keys, there was an issue of double submission of InitiateChange event in PoA contract.
+- There was no minimum limit for creating ballots.
+
+Solution:
+
+- Update [spec.json](https://github.com/poanetwork/poa-chain-spec/blob/sokol/spec.json): add new contract to `multiset` to fix an issue.
+- Organize the HF on block 509355
+
+## Instructions
+Follow instructions from here to replace `spec.json` on your node:
+https://github.com/poanetwork/poa-devops/blob/master/docs/Spec-hardfork.md
+
+* **On step 2** ("create group_vars/all file") set the following values for parameters in  `group_vars/all`:
+* for validator:
+```
+poa_role: "validator"
+MAIN_REPO_FETCH: "poanetwork"
+GENESIS_BRANCH: "sokol"
+```
+
+* for bootnode hoster:
+```
+poa_role: "bootnode"
+MAIN_REPO_FETCH: "poanetwork"
+GENESIS_BRANCH: "sokol"
+```
+
+* for master of ceremony:
+```
+poa_role: "moc"
+MAIN_REPO_FETCH: "poanetwork"
+GENESIS_BRANCH: "sokol"
+```
+
+* for explorer
+```
+poa_role: "explorer"
+MAIN_REPO_FETCH: "poanetwork"
+GENESIS_BRANCH: "sokol"
+```
+
+* **On step 3** ("create hosts file") please double-check that you're using IP address of your **SOKOL** node in `hosts` file.
