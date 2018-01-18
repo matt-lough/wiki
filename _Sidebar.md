@@ -20,6 +20,8 @@
 * Hard Forks
     * Sokol
         * [2018-01-08](HFs-Sokol-2018-01-08)
+        * [2018-01-18](HFs-Sokol-2018-01-18)
+
 * POA
     * [Papers](POA-Network-Papers)
     * [What is POA](What-is-POA)
