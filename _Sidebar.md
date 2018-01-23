@@ -21,6 +21,8 @@
     * Sokol
         * [2018-01-08](HFs-Sokol-2018-01-08)
         * [2018-01-18](HFs-Sokol-2018-01-18)
+    * Core
+        * [2018-01-29](HFs-Sokol-2018-01-29)
 
 * POA
     * [Papers](POA-Network-Papers)
