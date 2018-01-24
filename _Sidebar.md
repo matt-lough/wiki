@@ -18,6 +18,7 @@
         * [Non-AWS](Bootnode-Setup-Non-AWS)
     * [Non-AWS Node Setup](Non-AWS-Node-Setup)
 * Hard Forks
+    * [Hard Fork Guideline](https://github.com/poanetwork/wiki/wiki/Hard-Fork-Guideline)
     * Sokol
         * [2018-01-08](HFs-Sokol-2018-01-08)
         * [2018-01-18](HFs-Sokol-2018-01-18)

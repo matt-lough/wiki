@@ -27,6 +27,6 @@ In addition, to the energy consumption, current PoW networks:
 * Variable block generation times
 
 
-### POA compared to Proof of State/Delegated Proof of Stake  ( PoS/dPoS )
+### POA compared to Proof of Stake/Delegated Proof of Stake  ( PoS/dPoS )
 
 Proof of Stake eliminates the need to spend a huge amount of electric power to validate the blocks. Instead, blockchain participants with the most stake in it are selected by algorithm for the right to validate the blocks. The assumption behind Proof of Stake is the following: those who hold a stake in a network are incentivized to act in its interests. All else equal, the more stake one has, the higher should be his or her interest in preserving the system.  One vulnerability, is the fact that the same size stake may be valued differently by different actors.  This implies there are fundamental inequities among stake holders and thus differing motives for network behavior. This results whole new set of vulnerabilities that don't exist in PoW as high staked entities are incentivized to act in their own interests and not the interests of the network.  Lower stake entities are also higher at risk to malicious behavior such as bribery or coercion via the "nothing at stake" problem.
