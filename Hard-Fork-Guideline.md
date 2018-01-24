@@ -11,7 +11,7 @@ What to update if there is upcoming Hard Fork:
 3. https://github.com/poanetwork/poa-dapps-voting
  * addresses.js
  * contract abis
-4. https://github.com/poanetwork/poa-dapps-keys-generations
+4. https://github.com/poanetwork/poa-dapps-keys-generation
  * addresses.js
  * contract abis
 5. https://github.com/poanetwork/poa-scripts-moc
