@@ -1,23 +1,64 @@
-## How to setup a bootnode on Non-AWS.
-__*Attention*__    
-    All commands to configure and deploy node to POA Networks are done on your local Machine/Virtual Machine. For non-AWS & non-Azure nodes, you MUST create/configure your Remote Virtual Machine's user privileges and SSH key before running `site.yml` script.
+## Setting up Non-AWS VM for Bootnode Deployment
+#### Remote Machine Minimum System Requirements
+- Ubuntu 16.04 Image
+- Minimum 1 CPU
+- Minimum 1GB Memory
+- Anything > 4GB will be good, but may need to be upgraded in the future
 
-0. make sure you have Python 2 (versions 2.6 or 2.7) or Python 3 (versions 3.5 and higher) installed on your local machine (Windows isn't supported for the control machine) and Ansible v2.3+
+#### Control Machine Dependencies
+- Linux Based Bash Terminal
+- Python 2 (v2.6-v2.7)/Python3 (v3.5+)
+- Ansible v2.3+
+- Git
 
-1. setup an Ubuntu 16.04 server
+## Getting Started
+Log into your Cloud Dashboard and deploy a new node with a minimum of 1 CPU, 1GB (1024Mb) Memory & at least 4GB Hard Drive Capacity (This may need to be upgraded in future). This guide will be using `ubuntu` as the username, use the default or replace with your `sudo` username.
+- If prompted to create new user during deployment, do so and skip the section about adding new user.  
+- If prompted to add SSH Key for your new user, follow the steps below to generate your SSH Key and follow directions how to add to deployment.
 
-2. to run playbook you will need a user on the server, who can execute `sudo` wihout password and who can be logged in via SSH public key. By default it is assumed that this user is called `ubuntu`. If you already have a user with different name who satisfies these requirements, at the top of `site.yml` in `-hosts: all` section change line `user: ubuntu` to the name you have
+#### Generating SSH Key
+1. On your local control machine, open a terminal and generate your SSH key. It is recommended to use a different SSH Key for each POA network, key for `core` & key for `sokol`. We can set a parameter in ansible inventory script to use the specific key.
+
+        ssh-keygen -t rsa -b 4096 -C "node-label"
+
+    Enter a __STRONG__ password (write it down) and save the key as something memorable, enter complete path to key to save as custom name, replacing `user` with your current local user. e.g. below
+
+        /home/ubuntu/.ssh/id_poa-core
+        /home/ubuntu/.ssh/id_poa-sokol
+
+ - This will save 2 files, .pub will be your public key and the other is your private key. Private SSH key stays on your local machine and Public key gets copied to remote machines you want access to.
+
+#### Add User with Sudo Privileges 
+1. SSH into Remote Node using the root password provided by cloud service (either by web portal or email) or using the SSH key supplied during deployment. If you already have `sudo` user, replace `root` with your user and skip the next two steps.  
+ __*Azure users will not have access to their root account by default, use your sudo user and skip to next section after connecting.*__
+
+        ssh root@192.0.2.1
+
+2. Logged in as `root` add user and grant sudo privileges. It is recommended to use default user `ubuntu`.
+
+        adduser ubuntu
+
+- Enter a __STRONG__ password to protect the user and you can leave the next 5 fields blank. Confirm the information is correct. We will be using a parameter to ask `sudo` pass during ansible deployment.
+
+3. Grant user `ubuntu` sudo privileges
+
+        usermod -aG sudo ubuntu
+
+Your Non-AWS node is now ready for configuration using ansible-playbook provided by POA. Please follow the directions below to obtain the `deployment-playbooks` required to configure network node.
+
+## Configure node with Deployment-playbook
+To run playbook you will need a user on the server with `sudo` privileges and who can be logged in via SSH public key. By default it is assumed that this user is called `ubuntu`. If you already have a user with different name who satisfies these requirements, at the top of `site.yml` in `-hosts: all` section change line `user: ubuntu` to the `sudo` user you have
+
 ```
 ---
 - hosts: all
-  user: another-user
+  user: ubuntu
   become: True
 ...
 ```
-_NOTE_: playbook will additionally create a new unprivileged user named `bootnode` and add your ssh public key to `root` account.
+_NOTE_: Playbook will additionally create a new unprivileged user named `bootnode` and add your ssh public key to `root` account.
 
-3. clone repository with ansible playbooks and checkout branch with the network name you want to join (e.g. `core` for mainnet and `sokol` for testnet)
-
+3. Clone repository with ansible playbooks and checkout branch with the network name you want to join (e.g. `core` for mainnet and `sokol` for testnet)
 ```
 git clone https://github.com/poanetwork/deployment-playbooks.git
 cd deployment-playbooks
@@ -29,12 +70,11 @@ git checkout sokol
 git branch
 ```
 
-4. put ssh public keys (in format "ssh AAA...") that need access to the server to both files
+4. two files with ssh public key need to be created for ansible playbook to configure node correctly, use the path to your desired key.
 ```
-files/admins.pub
-files/ssh_bootnode.pub
+cat ~/.ssh/id_poa-core.pub > files/admins.pub
+cp files/admins.pub files/ssh_bootnode.pub
 ```
-(one key per line)
 
 5. create configuration file
 ```
@@ -70,14 +110,15 @@ _Double check that_ `allow_bootnode_ssh` _is_ `true` _otherwise you won't be abl
 192.0.2.1
 ```
 
-10. run ansible playbook
+10. run ansible playbook, replace the `--key-file` path with your desired SSH key
 ```
-ansible-playbook -i hosts site.yml
+ansible-playbook -i hosts site.yml -K --key-file "~/.ssh/id_poa-core"
 ```
 
 11. open `NETSTATS_SERVER` url in the browser and check that the node named `NODE_FULLNAME` appeared in the list
 
-12. login to the node and get enode from parity logs:
+12. login to the node and get enode from parity logs:  
+_Without access to `root` you can use `sudo` user instead, append `sudo` in front of commands after connecting to remote machine_
 ```
 ssh root@192.0.2.1
 grep enode /home/bootnode/logs/parity.log
@@ -93,8 +134,9 @@ _NOTE_ if after parity restart you notice that on `NETSTATS_SERVER` url your nod
 su bootnode
 pm2 restart all
 ```
-after that refresh `NETSTATS_SERVER` url and check again your node's block number. If your node is still not active or missing `enode`, log in to root account and reboot the OS. 
+after that refresh `NETSTATS_SERVER` url and check your node's block number. If your node is still not active or missing `enode`, log in to root account and reboot.  
+_Without access to `root` you can use `sudo` user instead, append `sudo` in front of commands after connecting to remote machine_
 ```
-su 
+su
 shutdown -r now
 ```
