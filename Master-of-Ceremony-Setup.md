@@ -19,15 +19,6 @@ Please be sure to use strong password, download keystore file `UTC--*--*`, your 
 There are quite a few repositories that are used to run the network. You will need to fork them and later update parameters.
 Please be consistent with naming of branches and use `NetworkName`.
 
-### Configs on azure
-https://github.com/poanetwork/deployment-azure/tree/dev-mainnet
-1. Create a separate branch named `NetworkName`
-```
-git checkout dev-mainnet
-git checkout -b NetworkName dev-mainnet
-```
-2. Don't change anything else, this repository is used only for configs now
-
 ### POA Network Consensus contract
 https://github.com/poanetwork/poa-network-consensus-contracts
 1. Create a separate branch named `NetworkName`

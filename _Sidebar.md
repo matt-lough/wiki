@@ -16,7 +16,6 @@
     * Full Node Operator
         * [AWS](Bootnode-Setup-AWS)
         * [Non-AWS](Bootnode-Setup-Non-AWS)
-    * [Non-AWS Node Setup](Non-AWS-Node-Setup)
 * Hard Forks
     * [Hard Fork Guideline](https://github.com/poanetwork/wiki/wiki/Hard-Fork-Guideline)
     * Sokol
