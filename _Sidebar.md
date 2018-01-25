@@ -30,6 +30,7 @@
     * Governance
         *  [Governance Overview](Governance-Overview)
         *  [Ballots -- Overview, Life cycle & Limits](Ballots-Overview.-Life-cycle-and-limits)
+        *  [Manage Validator Ballots]( https://github.com/poanetwork/wiki/wiki/Manage-Validator-Ballots)
     * Role of Validator
        *   [Overview](Role-of-Validator)
        *   [Validator Keys and Passwords](Validator-Keys-and-Passwords)
