@@ -20,7 +20,7 @@ This is the process to bootstrap a trusted setup by the Master of Ceremony (MoC)
 2. Governance -- 
 This process involves an existing Validator on the network proposes to add a new Validator via the Ballot.  There are two main reasons to add a Validator:
     * To increase the Validator set to increase the security of the network
-    * To replace a Validator removed from the network via Remove Validator Ballot, for malicious behavior or acted in any that impacts the performance or security of the network.  Once the invitee has been identified the proposing Validator requests the invitee to generate the (3) above keys.  The invitee can use this convenience generate keys DApp ( [here](https://ceremony.poa.network/#just-generate-keys) ).
+    * To replace a Validator removed from the network via Remove Validator Ballot, for malicious behavior or acted in any that impacts the performance or security of the network.  Once the invitee has been identified the proposing Validator requests the invitee to generate the (3) above keys.  The invitee can use this convenient generate keys DApp ( [here](https://ceremony.poa.network/#just-generate-keys) ).
 
 Goverance is implemented as a DApp and currently supports the following Ballots types:
 
