@@ -14,8 +14,8 @@
 
 ## Validator's node Setup prerequisites
 
-### 0. Pick your local Ansible Control Station username.
- - For clarity, we recommend using identical usernames on your Ansible Control Station and your remote node.  For example, one could create a user named "ubuntu" on both your Ansible Control Station and your remote note.  While we recommend using a dedicated node for the Ansible Control Station that can be powered down or moved off-network when not in use, if using a local workstation, creating and using a dedicated Ansible Control Station user reduces potential for error.  Please create a new local user (we recommend using our example 'ubuntu' username) and ensure this user has sudo or su (Super User) authority on the Ansible Control Station.  The rest of this example assumes your user is in the sudo group.
+### 0. Choose your local Ansible Control Station username.
+ - For clarity, you may wish to use identical usernames on your Ansible Control Station and your remote node.  For example, one could create a user named "ubuntu" on both your Ansible Control Station and your remote note.  If you have the means, using a dedicated node for the Ansible Control Station that can be powered down or moved off-network when not in use is ideal. If using a local workstation, creating and using a dedicated Ansible Control Station user reduces potential for error.  When you create a new local user (we recommend using our example 'ubuntu' username), ensure this user has sudo or su (Super User) authority on the Ansible Control Station.  The rest of this example assumes your user is in the sudo group.
 
 ### 1. git
 1. check that you have git installed
