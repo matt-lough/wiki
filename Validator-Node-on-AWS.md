@@ -1,5 +1,6 @@
-#### Last Updated: 2017/12/21
+#### Last Updated: 2018/01/28
 #### Changelog:
+- **2018/01/28**: Add instructions to recommend creating a local Ansible Control Station user, clarify where to collect AWS Node IP info,add more info and correct a few typos. 
 - **2017/12/27**: Add info about Sokol testnet
 - **2017/12/21**: Rewrite part about security groups (how to close access). Add description of the option to use elastic IP.
 
@@ -13,6 +14,8 @@
 
 ## Validator's node Setup prerequisites
 
+### 0. Pick your local Ansible Control Station username.  For clarity, we recommend using identical usernames on your Ansible Control Station and your remote node.  For example, one could create a user named "ubuntu" on both your Ansible Control Station and your remote note.  While we recommend using a dedicated node for the Ansible Control Station that can be powered down or moved off-network when not in use, if using a local workstation, creating and using a dedicated Ansible Control Station user reduces potential for error.  Please create a new local user (we recommend using our example 'ubuntu' username) and ensure this user has sudo or su (Super User) authority on the Ansible Control Station.  The rest of this example assumes your user is in the sudo group.
+
 ### 1. git
 1. check that you have git installed
 ```
@@ -25,7 +28,7 @@ if not - install it following instructions [here](https://git-scm.com/book/en/v2
 ```
 python --version
 ```
-if not - install it choosing apropriate binary from [here](https://www.python.org/downloads/)
+if not - install it choosing appropriate binary from [here](https://www.python.org/downloads/)
 
 2. check if you have `pip` python package manager install
 ```
@@ -78,13 +81,13 @@ brew install awscli
 ## Configuring AWS
 1. Register (if you haven't already) and login to the AWS management console: https://aws.amazon.com/console/
 
-2. to create credentials for cli, open IAM home https://console.aws.amazon.com/iam/home, select "Users" on the left hand side mav bar and then click "Add user".  Pick a username, and check "Programmatic access" for "Access type". Click "Next:Permissions"
+2. to create credentials for cli, open IAM home https://console.aws.amazon.com/iam/home, select "Users" on the left hand side navigation bar and then click "Add user".  Pick a username, and check "Programmatic access" for "Access type".  NOTE: For clarity we recommend using identical usernames on your Ansible Control Station and your remote node.  For example, one can create a user named "ubuntu" on both your Ansible Control Station and your remote note.
 
-3. you can choose any of the available options, but "Attach existing policies directly" is the simplest one. In the list of policy types search for and then check "AmazonEC2FullAccess". Click "Next:Review".  Review your account and click "Create user" to proceed.
+3. Click "Next: Permissions" - you can choose any of the available options, and "Attach existing policies directly" is the simplest one. In the list of policy types, search for and then check "AmazonEC2FullAccess". Click "Next:Review".  Review your account and click "Create user" to proceed.
 
 4. it is very important that you copy "Access Key ID" and "Secret Access Key" without leaving this page, because there is no other way to retrieve "Secret Access Key" later and you will have to start again and create another user. After copying this important information, select "Close". 
 
-5. after you've copied and saved your AWS secret keys, the next step is to upload your SSH public key. In the top left corner of the page select "Services -> EC2". On the left sidebar select "Network & Security" -> "Key Pairs". Click "Import Key Pair". Give a name to this keypair, otherwise base name of the file will be used (by default `id_rsa`). Browse your filesystem for the public key, or copy/paste:
+5. after you've copied and saved your AWS secret keys, the next step is to upload your SSH public key. In the top left corner of the page select "Services -> EC2". On the left sidebar select "Network & Security" -> "Key Pairs". Click "Import Key Pair". Give a name to this keypair, otherwise base name of the file will be used (by default `id_rsa`). Browse your Ansible Control Station file system for the public key, or copy/paste:
 ```
 pbcopy < ~/.ssh/id_rsa.pub
 ```
@@ -163,7 +166,7 @@ MINING_KEYFILE: '{"address":"..."}'
 MINING_ADDRESS: "0x..."
 ```
 * `MINING_KEYPASS` - insert your mining key's passphrase
-* please double-check with Master of Ceremony on what is the current Block Gas Limit in the network and compare it to the value in `BLK_GAS_LIMIT` option.
+* please double-check with Master of Ceremony on what is the current Block Gas Limit in the network and compare it to the value in `BLK_GAS_LIMIT` option.  Default is currently set as "BLK_GAS_LIMIT: "8000000".
 * `allow_validator_ssh` - leave this value set to `true` if you plan to access your node over ssh later
 * `allow_validator_p2p` - set this value to `true` to make your node discoverable by peers
 * `associate_validator_elastic_ip` - set this to `true` if you want to configure AWS Elastic IP for this node
@@ -174,36 +177,44 @@ Open this page, scroll down, choose your region from the first ("Zone") dropdown
 
 7. you may also choose a different value for the `validator_instance_type`. For `region: "us-east-2"` we recommend using `m4.xlarge`. Confirm your option of the types of instances available in your region,via: https://aws.amazon.com/ec2/pricing/on-demand/
 
-
 ## Deployment
 ### Create instance
 1. with all options configured, you first need to create an instance: (you should still be in: ~/deployment-playbooks)
 ```
 ansible-playbook validator.yml
 ```
-this script will ask you for your SSH key passphrase unless you didn't set a passphrase or you entered it recently.
+Running this script creates and powers up your remote AWS instance. this script will also ask you for your SSH key passphrase unless you didn't set a passphrase or you entered it recently.
 
 2. after this process is complete, examine script's output and write down IP (e.g. `192.0.2.1`) address and AWS InstanceID (e.g. `i-0123456789abcdef0`) for later use. If you chose to use elastic IP, write down node's final IP address.
 
 ### Configure instance
-1. create file `hosts` with the following content (assuming IP address is `192.0.2.1`)
+1. create file `hosts` with the following content (assuming IP address is `192.0.2.1`, gathered from previous step)
 ```
+touch hosts
+echo [validator] > hosts
+echo 192.0.2.1 >> hosts
+
+NOTE:  Feel free to edit the hosts file directly with any text editor (vi, pico, etc.) - file must contain at minimum:
 [validator]
 192.0.2.1
 ```
 
-2. run this script to configure the instance
+2. run this script to configure your remote node instance:
 ```
 ansible-playbook -i hosts site.yml
 ```
-if you get an error that host cannot be reached over SSH, please wait a minute and start again. This error may appear because instance is rebooted after creation, and this may take some time to complete.
+if you get an error that host cannot be reached over SSH, please wait a minute and start again. This error may appear because AWS instance is rebooted after creation, and this may take some time to complete.
 
-3. open the url for `NETSTAT_SERVER` and check if your node appeared in the list
+3. open the url for `NETSTAT_SERVER` and check that your node has appeared in the list
 
 ### Obtaining enode uri for Master of Ceremony
 Login to the node and get enode from parity logs:
 ```
-ssh root@192.0.2.1
+ssh root@192.0.2.1 OR, if root SSH access is not enabled:
+ssh -l ubuntu@192.0.2.1  #NOTE: replace 'ubuntu' with a different remote node user if you are not using the recommended example user.  Once logged in, become Super User by executing:
+
+sudo su    #NOTE:  enter the 'ubuntu' user password, or other user password if you have created a different user.  You should now be Super User, with all of the powers and identity of the 'root' user.  Be careful!
+ 
 grep enode /home/validator/logs/parity.log
 ```
 copy `enode` uri and send it to Master of Ceremony. If this line is not found, restart parity
@@ -212,19 +223,19 @@ systemctl restart poa-parity
 ```
 and try again. If `enode` uri is still not found, use the commands below to restart all services.
 
-_NOTE_ if after parity restart you notice that on `NETSTATS_SERVER` url your node starts to fall behind other nodes (block number is less than on other nodes), try to restart statistics service (assuming you are connected as `root`):
+_NOTE_ if after parity restart you notice that on `NETSTATS_SERVER` url your node starts to fall behind other nodes (block number is less than on other nodes) and has not caught up after a few minutes, try to restart statistics service (assuming you are connected as `root`):
 ```
 su validator
 pm2 restart all
 ```
-after that refresh `NETSTATS_SERVER` url and check again your node's block number. If your node is still not active or missing `enode`, log in to root account and reboot the OS. 
+after that, refresh the `NETSTATS_SERVER` url in your browser and check your node's block number again. If your node is still not active or missing `enode` entry, log in to root account and reboot the OS. PLEASE WAIT at least five minutes for your node to "catch up" before rebooting your remote server, and do so only as a final resort.
 ```
 su 
-shutdown -r now
+shutdown -hr now
 ```
 
 ### Configure access to your node
-Later, you may wish to change access options for your node. For example, initially you might have disabled access over ssh but now want to re-enable it. These options are set by parameters:
+Later, you may wish to change access options for your node. For example, initially you might have disabled access over ssh but now want to re-enable it. These options are set by parameters in the file group_vars/all:
 * `allow_validator_ssh` - `true`/`false` - allow/deny access over ssh
 * `allow_validator_p2p` - `true`/`false` - allow/deny peer-discovery
 
@@ -233,10 +244,10 @@ When you make changes, rerun the playbook:
 ansible-playbook -i hosts site.yml
 ```
 
-NOTE: this script applies simultaneously to all your instances with security group named `validator-security`. This note is relevant only if you have several instances of validator nodes running in the same region.
+NOTE: this script applies simultaneously to all your instances with security group named `validator-security` and technically any other servers in your 'hosts' file. This note is relevant only if you have several validator node or other instances running.
 
 ### Remove instance
-In case you want to remove your instance
+In case you want to remove your AWS instance
 
 a. do it via AWS GUI: open AWS management console https://console.aws.amazon.com/ec2/v2/home#Instances check the instance you want to remove, click Actions > Instance State > Terminate.
 
@@ -246,4 +257,4 @@ aws ec2 terminate-instances --instance-ids i-0123456789abcdef0
 ```
 (replace `i-0123456789abcdef0` with your actual AWS InstanceID).
 
-NOTE: this operation is irrevertable and if need be, you'll have to create a new instance from scratch.
+NOTE: this operation is irreversible!  If you want to redeploy, you will have to create a new instance from scratch.
