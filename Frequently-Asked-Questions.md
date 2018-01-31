@@ -15,6 +15,9 @@
 5. What was the presale price in USD at the time of sale?
     - $0.077
 
+5. What was the price of ETH during presale?
+    - ~$333.00
+
 6. How long did it take to raise the max cap?
     - All POA tokens sold out in presale in about 58 seconds.
 
@@ -26,6 +29,9 @@
 
 9. When will the token sale take place?
     - There will be __NO__ Token Sale since all tokens were sold during presale.
+
+9. Have POA tokens been distributed to presale contributors and bounty participants?
+    - Yes, POA tokens were distributed to participants shortly after core network launch.
 
 9. Will POA be on EtherDelta Exchange?
     - No it will __NOT__ be on EtherDelta as POA is NOT a ERC20 token. It has its own network & blockchain and will be released to regular exchanges, not one based on ERC20 tokens only.
