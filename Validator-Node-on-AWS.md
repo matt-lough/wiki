@@ -11,6 +11,7 @@
 4. Upload your initial key to MetaMask
 5. Click "Generate keys", confirm transaction.
 6. **Be sure to copy address, password and download keystore file for each key (mining, payout, voting) without closing browser's tab**. There is no way to get this data once you close the tab. Keep it in a safe place.
+7. Submit a request to provide your contact details and license info: follow this guide https://github.com/poanetwork/wiki/wiki/Validator-Set-Metadata
 
 ## Validator's node Setup prerequisites
 
