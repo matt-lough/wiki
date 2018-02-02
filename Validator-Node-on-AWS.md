@@ -1,8 +1,8 @@
-#### Last Updated: 2018/01/28
+# Setting up AWS VM for Validator Node Deployment
+
+#### Last Updated: 2018/02/02
 #### Changelog:
-- **2018/01/28**: Add instructions to recommend creating a local Ansible Control Station user, clarify where to collect AWS Node IP info, add more info and correct a few typos. 
-- **2017/12/27**: Add info about Sokol testnet
-- **2017/12/21**: Rewrite part about security groups (how to close access). Add description of the option to use elastic IP.
+- **2018/02/02**: Add section on keys exchange process and this changelog to make this page similar to non-aws setup guide.
 
 ## Exchange your initial keys for mining, payout and voting keys
 1. Start Chrome

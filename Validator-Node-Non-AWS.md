@@ -1,4 +1,21 @@
-## Setting up Non-AWS VM for Validator Node Deployment
+# Setting up Non-AWS VM for Validator Node Deployment
+
+#### Last Updated: 2018/02/01
+#### Changelog:
+- **2018/02/01**: Add instructions to set validator metadata.
+- **2018/01/28**: Add instructions to recommend creating a local Ansible Control Station user, clarify where to collect AWS Node IP info, add more info and correct a few typos.
+- **2017/12/27**: Add info about Sokol testnet
+- **2017/12/21**: Rewrite part about security groups (how to close access). Add description of the option to use elastic IP.
+
+## Exchange your initial keys for mining, payout and voting keys
+1. Start Chrome
+2. Connect to the network in MetaMask - click on the network name in the top left corner of plugin's window and in the dropdown list select "Custom RPC", enter URL that was provided to you by the Master of Ceremony (For Core network: [https://core.poa.network](https://core.poa.network) for Sokol testnet [https://sokol.poa.network](https://sokol.poa.network)). Wait till the MetaMask connects to the network
+3. Open Keys DApp: for Core network: [https://core-ceremony.poa.network/](https://core-ceremony.poa.network/), for Sokol testnet: [https://sokol-ceremony.poa.network/](https://sokol-ceremony.poa.network/)
+4. Upload your initial key to MetaMask
+5. Click "Generate keys", confirm transaction.
+6. **Be sure to copy address, password and download keystore file for each key (mining, payout, voting) without closing browser's tab**. There is no way to get this data once you close the tab. Keep it in a safe place.
+7. Submit a request to provide your contact details and license info: follow this guide https://github.com/poanetwork/wiki/wiki/Validator-Set-Metadata
+
 #### Remote Machine Minimum System Requirements
 - Ubuntu 16.04 Image
 - Minimum 1 CPU
