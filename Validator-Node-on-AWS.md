@@ -213,7 +213,7 @@ if you get an error that host cannot be reached over SSH, please wait a minute a
 Login to the node and get enode from parity logs:
 ```
 ssh root@192.0.2.1 OR, if root SSH access is not enabled:
-ssh -l ubuntu@192.0.2.1  #NOTE: replace 'ubuntu' with a different remote node user if you are not using the recommended example user.  Once logged in, become Super User by executing:
+ssh -l ubuntu 192.0.2.1  #NOTE: replace 'ubuntu' with a different remote node user if you are not using the recommended example user.  Once logged in, become Super User by executing:
 
 sudo su    #NOTE:  enter the 'ubuntu' user password, or other user password if you have created a different user.  You should now be Super User, with all of the powers and identity of the 'root' user.  Be careful!
  
