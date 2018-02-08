@@ -38,7 +38,7 @@ git clone -b sokol https://github.com/poanetwork/poa-chain-spec.git
 
 2. In terminal run    
 ```
-parity --chain /path/to/spec.json --bootnodes /path/to/bootnodes.txt ui
+parity --chain /path/to/spec.json --reserved-peers /path/to/bootnodes.txt ui
 ```
 If you would like to limit or choose specific bootnodes, run 
 ```
@@ -61,7 +61,7 @@ git clone -b sokol https://github.com/poanetwork/poa-chain-spec.git
 
 2. Open Windows Command Prompt CMD or Windows Powershell and navigate to `Parity` executive file.    
 ```
-parity --chain c:\path\to\spec.json --bootnodes c:\path\to\bootnodes.txt ui
+parity --chain c:\path\to\spec.json --reserved-peers c:\path\to\bootnodes.txt ui
 ```
 If you would like to limit or choose specific bootnodes, run 
 ```
