@@ -334,7 +334,7 @@ cd ~/poa-scripts-owner
 open `config.json` and under "contracts.KeysManager" block replace "addr" with KeysManager contract's address that you obtained while deploying other contracts from the consensus. Don't change ABI unless you've updated contract's code. Then do
 ```
 cd generateInitialKey
-node generateInitialKey
+npm start
 ```
 Script will output initial key's address, password and location of keystore file.
 
