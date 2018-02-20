@@ -30,7 +30,7 @@ Steps 2-6 should be done if there are no files in `flat/` folder
 6. Run `./make_flat.sh` to generate flat versions of contracts. They will be saved to `flat/`
 
 7. Open [Remix](http://remix.ethereum.org/) in your browser, copy-paste code from `flat/PoaNetworkConsensus_flat.sol`, press "Start to compile".
-8. On "Run" tab select "Javascript VM" as environment, "PoaNetworkConsensus" as your contract, in "Create" field paste MoC's address "0x..." and click "Create"
+8. On "Run" tab select "Javascript VM" as environment, "PoaNetworkConsensus" as your contract, in "Create" field paste MoC's address and empty array of validators: `"0x...", []` and click "Create"
 9. After the contract is compiled click "Details" button and copy it's bytecode
 
 ### Chain.json
