@@ -388,7 +388,11 @@ https://github.com/poanetwork/poa-scripts-validator/tree/master
 2. Update `contracts.KeysManager.addr` in `config.json` to the one you obtained when deploying other contracts of consensus (same thing as you did manually on moc's node).
 
 ## Chapter VI - in which MoC changes links in Validator's README
-1. Supply the validator's README with the correct Keys Exchange DApp url: https://github.com/poanetwork/wiki/blob/master/validator-guide-new.md#exchange-your-initial-keys-for-mining-payout-and-voting-keys
+1. Supply the validator's README with the correct Keys Exchange DApp url: 
+- https://github.com/poanetwork/wiki/wiki/Validator-Node-on-AWS#exchange-your-initial-keys-for-mining-payout-and-voting-keys 
+or 
+- https://github.com/poanetwork/wiki/wiki/Validator-Node-Non-AWS#exchange-your-initial-keys-for-mining-payout-and-voting-keys 
+depending on your VM.
 
 ## Chapter VII - in which MoC gives initial keys to first validators and hopes for the best
 For each validator, you will need to provide:
