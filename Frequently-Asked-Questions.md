@@ -37,7 +37,8 @@
     - No it will __NOT__ be on EtherDelta as POA is NOT a ERC20 token. It has its own network & blockchain and will be released to regular exchanges, not one based on ERC20 tokens only.
 
 10. When will POA be on an exchange & what exchanges will it be listed on?
-    - POA Network is not affiliated with any crypto exchange and we have no insights on their internal processes. Therefore, we cannot comment on the timing of the listing, neither can we point to where the token will be listed, until this is announced by the exchanges.
+    - POA has been listed on __Binance__ exchange on February 28, 2018.
+    - Regarding additional exchanges, POA is not affiliated with any crypto exchange and cannot say when it will be released in any other exchanges or which ones.
 
 11. Are we allowed to trade POA in POA's Telegram channel?
     - No, it is not allowed and OTC trading is not recommended in general because of many scammers out there. Please wait until it hits exchanges, all information will be pinned to the top of the Telegram channel and posted to social media accounts.
@@ -60,3 +61,6 @@
 
 15. When will the next Newsletter be released?
     - The newsletter is worked on by multiple POA team members in different time zones. Newsletters will be released periodically as there is news to publish. When completed, it still needs to be proof read and sent for approval. Please, do NOT keep asking "When Newsletter?".
+
+16. Where can I find the POA Whitepaper?
+    - POA Network Whitepaper can be found on POA's wiki, [here](https://github.com/poanetwork/wiki/wiki/POA-Network-Whitepaper).
