@@ -1,5 +1,5 @@
 __*Attention*__
-##### POA Network has been listed on __Binance__ exchange! It is now trading with BTC-POA, ETH-POA & BNB-POA trading pairs.
+#### POA Network has been listed on __Binance__ exchange! It is now trading with BTC-POA, ETH-POA & BNB-POA trading pairs.
 
 Due to the nature of the agreements and NDAs, we really can’t talk or even hint at what other exchanges POA will be listed on, or when they will be listed. As soon as we can announce the exchanges, we will do so in all our social channels so everyone can find out at the same time.  
   [Twitter](https://twitter.com/poanetwork) & [Medium](https://medium.com/@poanetwork): @poanetwork  
