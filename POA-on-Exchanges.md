@@ -1,4 +1,4 @@
-<img src="https://github.com/hashguide/wiki/blob/master/assets/imgs/getting-started/exchanges/binance.png" align="right">
+<img src="https://github.com/hashguide/wiki/blob/master/assets/imgs/getting-started/exchanges/binance.png" align="right" width="260px">
 
 #### POA Network has been listed on __Binance__ exchange!  
 It is now trading with the pairs: BTC-POA, ETH-POA, BNB-POA 
