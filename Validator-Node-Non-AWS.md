@@ -35,8 +35,7 @@ Before the ballot can be proposed, the applicant would need to generate 3 separa
 - Click the `Copy` Button next to each `Password`, matching to resulting address in the Notepad. Mining, Payout, Voting.
 - Finally, Click Button to download the JSON Keystore files for each key and keep the Notepad file & all 3 keys + initial key somewhere safe.  
 __*NOTE*__  
-Preferred method to store the keyfiles and information is to store on an encrypted drive. e.g. usb drive  
-If you go this route, please do not forget your password for the encryption as you will lose your data and will have to get your old keys voted out and new ones voted in if any issue happens with the validator's node.
+Preferred method to store the keyfiles and information is to store on an encrypted drive. e.g. usb drive. If you go this route, please do not forget your password for the encryption as you will lose your data and will have to get your old keys voted out and new ones voted in if any issue happens with the validator's node.
 
 ##### After you have successfully deployed your node, Submit your Validator MetaData
 1. Follow the guide on how to [Update Validator MetaData](https://github.com/poanetwork/wiki/wiki/Validator-Set-Metadata).
