@@ -1,4 +1,4 @@
-<img src="https://github.com/hashguide/wiki/blob/master/assets/imgs/getting-started/exchanges/binance.png" align="right" width="220px">
+<img src="https://github.com/poanetwork/wiki/blob/master/assets/imgs/getting-started/exchanges/binance.png" align="right" width="220px">
 
 ### POA has been listed on __Binance__ exchange!  
 It is now trading with the pairs: BTC-POA, ETH-POA, BNB-POA 
