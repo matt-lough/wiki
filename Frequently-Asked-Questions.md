@@ -44,7 +44,7 @@
     - No, it is not allowed and OTC trading is not recommended in general because of many scammers out there. Please wait until it hits exchanges, all information will be pinned to the top of the Telegram channel and posted to social media accounts.
 
 12. Is there a Telegram Announcement channel?
-    - No, All announcements will be Pinned to the top of POA Official [Telegram](https://t.me/joinchat/FlX0FD_ndCsB4_n60sCu2w)
+    - Yes, POA Official Announcements [Telegram](t.me/poa_network)
 
 12. Where can I find more information about POA?
     - You can check the [What is POA](What-is-POA) section of this Wiki.
