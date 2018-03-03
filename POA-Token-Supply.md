@@ -14,4 +14,6 @@ The circulating supply of POA can be calculated by using the formula below. You 
 - __201,968,640 POA__ plus __SUM__ of __Number of Current Blocks__  
 
 ## After the core launch
-POA has a block time of __~5__ seconds and rewards each validated block miner __1 POA__ for each block. These block rewards never run out and on `November 17, 2018` there will be __5 POA__ minted per block. The remaining __4 POA__ per block will be put aside to benefit the network however the current Validators vote to choose and Validator's reward will remain at __1 POA__.  
+POA has a block time of __~5__ seconds and rewards each validated block miner __1 POA__ for each block. These block rewards never run out and on `November 17, 2018` there will be __2 POA__ minted per block. The remaining __1 POA__ per block will be put aside to benefit the network however the current Validators vote to choose, some example use cases are to Burn coins, hold coins or spend on R&D for the POA Foundation. Validator's reward will remain at __1 POA__ after this transition.  
+
+You can find more info located in the [POA Whitepaper](https://github.com/hashguide/wiki/wiki/POA-Network-Whitepaper#economy) Economy Section
