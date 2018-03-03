@@ -1,4 +1,4 @@
-# Setting up Non-AWS VM for Validator Node Deployment
+## Setting up Non-AWS VM for Validator Node Deployment
 
 #### Last Updated: 2018/02/01
 #### Changelog:
@@ -7,28 +7,54 @@
 - **2017/12/27**: Add info about Sokol testnet
 - **2017/12/21**: Rewrite part about security groups (how to close access). Add description of the option to use elastic IP.
 
-## Exchange your initial keys for mining, payout and voting keys
+### MoC: Master of Ceremony Key Exchange & Generation
 1. Start Chrome
-2. Connect to the network in MetaMask - click on the network name in the top left corner of plugin's window and in the dropdown list select "Custom RPC", enter URL that was provided to you by the Master of Ceremony (For Core network: [https://core.poa.network](https://core.poa.network) for Sokol testnet [https://sokol.poa.network](https://sokol.poa.network)). Wait till the MetaMask connects to the network
-3. Open Keys DApp: for Core network: [https://core-ceremony.poa.network/](https://core-ceremony.poa.network/), for Sokol testnet: [https://sokol-ceremony.poa.network/](https://sokol-ceremony.poa.network/)
-4. Upload your initial key to MetaMask
+2. Connect to the desired network in MetaMask by selecting the `Network` dropdown menu on MetaMask and add `Custom RPC` with the following endpoints.
+ - Core Network: `https://core.poa.network`
+ - Sokol Test Network: `https://sokol.poa.network`
+3. Upload your initial key to MetaMask that MoC has supplied you using the password provided.
+4. Navigate your chrome browser to [https://ceremony.poa.network/](https://ceremony.poa.network/)
+- Make sure you have your `Initial Key` supplied by MoC, selected in MetaMask.
 5. Click "Generate keys", confirm transaction.
-6. **Be sure to copy address, password and download keystore file for each key (mining, payout, voting) without closing browser's tab**. There is no way to get this data once you close the tab. Keep it in a safe place.
-7. Submit a request to provide your contact details and license info: follow this guide https://github.com/poanetwork/wiki/wiki/Validator-Set-Metadata
+6. __ATTENTION:__ This next part is __VERY__ important and must be done correctly in order to be able to participate in the consensus immediately, follow directions below __BEFORE__ closing out of the browser window. Open up a Notepad and copy required info as follows.
+- Click the `Copy` Button next to each `Address`. Mining, Payout, Voting. Paste them separately in the Notepad.
+- Click the `Copy` Button next to each `Password`, matching to resulting address in the Notepad. Mining, Payout, Voting.
+- Finally, Click Button to download the JSON Keystore files for each key and keep the Notepad file & all 3 keys + initial key somewhere safe.  
+__*NOTE*__  
+Preferred method to store the keyfiles and information is to store on an encrypted drive. e.g. usb drive  
+If you go this route, please do not forget your password for the encryption as you will lose your data and will have to get your old keys voted out and new ones voted in if any issue happens with the validator's node.
 
-#### Remote Machine Minimum System Requirements
+### After Ceremony Stage: Validators vote in new validators
+After the initial ceremony stage, it's time for the initial set of validators to vote in new validators using the POA Voting Dapp. One validator will create a Ballot for each of the needed keys to participate and each validator will cast their own vote minus the MoC, who is not allowed to vote on consensus level. It has been agreed upon by the POA network that the next stage would end with 25 Validators on the Core network. This number may change in the future and can have any amount one desires, this would likely be proposed by a ballot to increase.  
+
+Before the ballot can be proposed, the applicant would need to generate 3 separate key pairs with passwords & JSON keyfiles. There is a very simple method of doing this, see below.
+1. Simply go to this URL in your browser to generate 3 key/pass pairs with needed keyfiles.
+- [https://ceremony.poa.network/#just-generate-keys](https://ceremony.poa.network/#just-generate-keys)
+6. __ATTENTION:__ This next part is __VERY__ important and must be done correctly in order to be able to participate in the consensus immediately, follow directions below __BEFORE__ closing out of the browser window. Open up a Notepad and copy required info as follows.
+- Click the `Copy` Button next to each `Address`. Mining, Payout, Voting. Paste them separately in the Notepad.
+- Click the `Copy` Button next to each `Password`, matching to resulting address in the Notepad. Mining, Payout, Voting.
+- Finally, Click Button to download the JSON Keystore files for each key and keep the Notepad file & all 3 keys + initial key somewhere safe.  
+__*NOTE*__  
+Preferred method to store the keyfiles and information is to store on an encrypted drive. e.g. usb drive  
+If you go this route, please do not forget your password for the encryption as you will lose your data and will have to get your old keys voted out and new ones voted in if any issue happens with the validator's node.
+
+##### After you have successfully deployed your node, Submit your Validator MetaData
+1. Follow the guide on how to [Update Validator MetaData](https://github.com/poanetwork/wiki/wiki/Validator-Set-Metadata).
+
+#### Local/Remote Machine System Requirements
+##### Remote Machine Minimum System Requirements
 - Ubuntu 16.04 Image
 - Minimum 1 CPU
 - Minimum 1GB Memory
 - Anything > 4GB will be good, but may need to be upgraded in the future
 
-#### Control Machine Dependencies
+##### Control Machine Dependencies
 - Linux Based Bash Terminal
 - Python 2 (v2.6-v2.7)/Python3 (v3.5+)
 - Ansible v2.3+
 - Git
 
-## Getting Started
+### Getting Started
 Log into your Cloud Dashboard and deploy a new node with a minimum of 1 CPU, 1GB (1024Mb) Memory & at least 4GB Hard Drive Capacity (This may need to be upgraded in future). This guide will be using `ubuntu` as the username, use the default or replace with your `sudo` username.
 - If prompted to create new user during deployment, do so and skip the section about adding new user.  
 - If prompted to add SSH Key for your new user, follow the steps below to generate your SSH Key and follow directions how to add to deployment.
@@ -63,7 +89,7 @@ Log into your Cloud Dashboard and deploy a new node with a minimum of 1 CPU, 1GB
 
 Your Non-AWS node is now ready for configuration using ansible-playbook provided by POA. Please follow the directions below to obtain the `deployment-playbooks` required to configure network node.
 
-## Configure node with Deployment-playbook
+### Configure node with Deployment-playbook
 To run playbook you will need a user on the server with `sudo` privileges and who can be logged in via SSH public key. By default it is assumed that this user is called `ubuntu`. If you already have a user with different name who satisfies these requirements, at the top of `site.yml` in `-hosts: all` section change line `user: ubuntu` to the `sudo` user you have
 
 ```

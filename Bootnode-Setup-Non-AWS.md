@@ -1,17 +1,19 @@
 ## Setting up Non-AWS VM for Bootnode Deployment
-#### Remote Machine Minimum System Requirements
+
+#### Local/Remote Machine System Requirements
+##### Remote Machine Minimum System Requirements
 - Ubuntu 16.04 Image
 - Minimum 1 CPU
 - Minimum 1GB Memory
 - Anything > 4GB will be good, but may need to be upgraded in the future
 
-#### Control Machine Dependencies
+##### Control Machine Dependencies
 - Linux Based Bash Terminal
 - Python 2 (v2.6-v2.7)/Python3 (v3.5+)
 - Ansible v2.3+
 - Git
 
-## Getting Started
+### Getting Started
 Log into your Cloud Dashboard and deploy a new node with a minimum of 1 CPU, 1GB (1024Mb) Memory & at least 4GB Hard Drive Capacity (This may need to be upgraded in future). This guide will be using `ubuntu` as the username, use the default or replace with your `sudo` username.
 - If prompted to create new user during deployment, do so and skip the section about adding new user.  
 - If prompted to add SSH Key for your new user, follow the steps below to generate your SSH Key and follow directions how to add to deployment.
@@ -46,7 +48,7 @@ Log into your Cloud Dashboard and deploy a new node with a minimum of 1 CPU, 1GB
 
 Your Non-AWS node is now ready for configuration using ansible-playbook provided by POA. Please follow the directions below to obtain the `deployment-playbooks` required to configure network node.
 
-## Configure node with Deployment-playbook
+### Configure node with Deployment-playbook
 To run playbook you will need a user on the server with `sudo` privileges and who can be logged in via SSH public key. By default it is assumed that this user is called `ubuntu`. If you already have a user with different name who satisfies these requirements, at the top of `site.yml` in `-hosts: all` section change line `user: ubuntu` to the `sudo` user you have
 
 ```

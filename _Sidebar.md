@@ -25,6 +25,7 @@
         * [2018-01-29](HFs-Core-2018-01-29)
 
 * POA
+    * [Token Supply](POA-Token-Supply)
     * [Papers](POA-Network-Papers)
     * [What is POA](What-is-POA)
     * Governance
