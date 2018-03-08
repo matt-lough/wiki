@@ -3,7 +3,7 @@
 As we have grown as a community in the telegram members to almost 9000 members, it has become important to create a set of rules for all our community members to follow. The rules below are an extension of basic decency and courtesy. Continuously breaking these rules will result in a ban from the telegram channel. 
 
 ### No FUD or rumours
-Any attempts at spreading rumours such as listing dates, partnerships,  will result in a ban. The same is applied for any attempts at spreading FUD (Fear, Uncertainty, Undoubt). 
+Any attempts at spreading rumours such as listing dates, partnerships,  will result in a ban. The same is applied for any attempts at spreading FUD (Fear, Uncertainty, Doubt). 
 
 ### No Swearing
 This is self-explanatory. We would like to keep the Telegram a civil discussion space for POA.
