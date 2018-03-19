@@ -1,6 +1,6 @@
 * Getting Started
     * [Installation](POA-Installation)
-    * Wallets
+    * [Wallets](https://github.com/poanetwork/wiki/wiki/Wallets)
         * [MetaMask](POA-Network-on-MetaMask)
         * [MEW](POA-Network-on-MEW)
         * [Ledger](POA-Network-on-Ledger)
