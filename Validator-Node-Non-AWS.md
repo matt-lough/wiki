@@ -163,7 +163,9 @@ ansible-playbook -i hosts site.yml -K --key-file "~/.ssh/id_poa-core"
 
 11. open `NETSTATS_SERVER` url in the browser and check that the node named `NODE_FULLNAME` appeared in the list
 
-12. login to the node and get enode from parity logs:  
+12. **NOTE** skip this step if you are deploying your node to CORE network. You should not make your `enode` public as it will make your validator node an easy target for denial of service attacks.
+If you are deploying on a testnet (sokol), follow the steps below:
+login to the node and get enode from parity logs:  
 _Without access to `root` you can use `sudo` user instead, append `sudo` in front of commands after connecting to remote machine_
 ```
 ssh root@192.0.2.1

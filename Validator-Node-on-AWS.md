@@ -234,6 +234,8 @@ if you get an error that host cannot be reached over SSH, please wait a minute a
 3. open the url for `NETSTAT_SERVER` and check that your node has appeared in the list
 
 ### Obtaining enode uri for Master of Ceremony
+**NOTE** skip this step if you are deploying your node to CORE network. You should not make your `enode` public as it will make your validator node an easy target for denial of service attacks.
+If you are deploying on a testnet (sokol), follow the steps below:
 Login to the node and get enode from parity logs:
 ```
 ssh root@192.0.2.1 OR, if root SSH access is not enabled:
