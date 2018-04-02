@@ -61,7 +61,7 @@ https://github.com/poanetwork/poa-chain-spec
 
 ### Ansible playbook
 https://github.com/poanetwork/deployment-playbooks
-1. Create a separate branch named `NetworkName`
+1. Create a separate branch named `NetworkName` from `sokol` or `core` branch
 2. Open `group_vars/all.network` and replace the following variables with corresponding branch names (should be `NetworkName` mostly)
 * `SCRIPTS_MOC_BRANCH`
 * `SCRIPTS_VALIDATOR_BRANCH`
