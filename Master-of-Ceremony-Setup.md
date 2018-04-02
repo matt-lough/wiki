@@ -329,7 +329,7 @@ to distribute tokens.
 
 9. **To generate initial keys** go to
 ```
-cd ~/poa-scripts-owner
+cd ~/poa-scripts-moc
 ```
 open `config.json` and under "contracts.KeysManager" block replace "addr" with KeysManager contract's address that you obtained while deploying other contracts from the consensus. Don't change ABI unless you've updated contract's code. Then do
 ```
