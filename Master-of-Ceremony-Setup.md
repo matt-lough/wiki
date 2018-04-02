@@ -307,8 +307,8 @@ systemctl restart poa-parity
 ```
 su moc
 git clone https://github.com/poanetwork/poa-network-consensus-contracts.git
-git checkout  <correct branch name>
 cd poa-network-consensus-contracts
+git checkout  <correct branch name>
 npm install
 ```
 and run the following command to deploy other contracts from the consensus (change `POA_NETWORK_CONSENSUS_ADDRESS` accordingly if you changed `safeContract` in spec.json):
