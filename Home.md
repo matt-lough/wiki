@@ -11,7 +11,8 @@ POA Network is the first Ethereum-based public network with Proof of Authority c
         * [MEW](POA-Network-on-MEW)
         * [Ledger](POA-Network-on-Ledger)
         * [Trezor](POA-Network-on-Trezor)
-        * [Trust](POA-Network-on-Trust-Wallet)
+        * [Trust Mobile Wallet](POA-Network-on-Trust-Wallet)
+        * [CitoWise Mobile Wallet](POA-on-CitoWise)
     * [Exchanges](POA-on-Exchanges)
     * Additional Resources
       * [Key Management Tutorial](https://docs.google.com/document/d/1EItXLZv1ma-pOZOTnWh4NSdpSh-8V71B49a-h8eec4E/edit?usp=sharing)

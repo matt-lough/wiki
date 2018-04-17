@@ -5,7 +5,8 @@
         * [MEW](POA-Network-on-MEW)
         * [Ledger](POA-Network-on-Ledger)
         * [Trezor](POA-Network-on-Trezor)
-        * [Trust](POA-Network-on-Trust-Wallet)
+        * [Trust Mobile Wallet](POA-Network-on-Trust-Wallet)
+        * [CitoWise Mobile Wallet](POA-Network-on-CitoWise)
     * [Exchanges](POA-on-Exchanges)
     * [FAQ](Frequently-Asked-Questions)
 * Roles

@@ -1,8 +1,20 @@
-<img src="https://github.com/poanetwork/wiki/blob/master/assets/imgs/getting-started/exchanges/binance.png" align="right" width="220px">
+#### POA is actively working on getting into the top exchanges for a trustworthy trading experience. See below for the exchanges POA is currently trading on.
 
-### POA has been listed on __Binance__ exchange!  
-It is now trading with the pairs: BTC-POA, ETH-POA, BNB-POA 
-Find POA on [CoinMarketCap](https://coinmarketcap.com/currencies/poa-network/)
+POA is available on the following exchanges and will be announced when more are added, stay tuned!
+
+- [Binance Exchange](https://binance.com/)
+  - POA-BTC
+  - POA-ETH
+  - POA-BNB
+
+
+- [BiBox Exchange](https://bibox.com/)
+  - POA-BTC
+  - POA-ETH 
+
+- [Cex.Plus Exchange](https://cex.plus/)
+  - POA-BTC
+  - POA-ETH
 
 __*Attention*__  
 Due to the nature of the agreements and NDAs, we really can’t talk or even hint at what other exchanges POA will be listed on, or when they will be listed. As soon as we can announce the exchanges, we will do so in all our social channels so everyone can find out at the same time.  
