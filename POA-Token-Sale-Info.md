@@ -5,7 +5,7 @@ __**ATTENTION**__
 
   To see a list of compatiable wallets, please [click here](Wallets).
 
-  ### POA Token Sale Information
+  ## POA Token Sale Information
 
   ![POA Token Distribution Pie Charts](https://github.com/poanetwork/wiki/blob/master/assets/imgs/poa/token-sale-info/token-distribution-chart.png)
 
