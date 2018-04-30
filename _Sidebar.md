@@ -26,6 +26,7 @@
         * [2018-01-29](HFs-Core-2018-01-29)
 
 * POA
+    * [Crowdsale Info](POA-Token-Sale-Info)
     * [Token Supply](POA-Token-Supply)
     * [Papers](POA-Network-Papers)
     * [What is POA](What-is-POA)

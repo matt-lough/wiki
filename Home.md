@@ -33,12 +33,10 @@ POA Network is the first Ethereum-based public network with Proof of Authority c
     * Core
         * [2018-01-29](HFs-Core-2018-01-29)
 * POA
+    * [Crowdsale Info](POA-Token-Sale-Info)
     * [Token Supply](POA-Token-Supply)
-    * [Papers](POA-Network-Papers)
     * [What is POA](What-is-POA)
-    * [Token Supply](POA-Token-Supply)
     * [Papers](POA-Network-Papers)
-    * [What is POA](What-is-POA)
     * Governance
         * [Governance Overview](Governance-Overview)
         * [Ballots -- Overview, Life cycle & Limits](Ballots-Overview.-Life-cycle-and-limits/)
