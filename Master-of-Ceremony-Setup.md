@@ -67,7 +67,6 @@ https://github.com/poanetwork/deployment-playbooks
 2. Open `group_vars/all.network` and replace the following variables with corresponding branch names (should be `NetworkName` mostly)
 * `SCRIPTS_MOC_BRANCH`
 * `SCRIPTS_VALIDATOR_BRANCH`
-* `TEMPLATES_BRANCH`
 * `GENESIS_BRANCH`
 * `GENESIS_NETWORK_NAME` - **make sure it matches `name` in `spec.json`**
 3. Replace `MOC_ADDRESS` with your MoC address
@@ -89,7 +88,7 @@ https://github.com/poanetwork/deployment-playbooks
 
 4. it is very important that you copy "Access Key ID" and "Secret Access Key" without leaving this page, because there is no other way to retrieve "Secret Access Key" later and you will have to start again and create another user.
 
-5. when you've copied and saved your AWS secret keys, next step is to upload your SSH public key. In the top left corner of the page select "Services > EC2". On the left sidebar select "Network & Security" > "Key Pairs". Click "Import Key Pair". Browse your filesystem for the public key. You can give a name to this keypair, otherwise base name of the file will be used (by default `id_rsa`).
+5. when you've copied and saved your AWS secret keys, next step is to upload your SSH public key. In the top left corner of the page select "Services > EC2". On the left sidebar select "Network & Security" > "Key Pairs". Click "Import Key Pair". Browse your filesystem for the public key. You can give a name to this keypair, otherwise, base name of the file will be used (by default `id_rsa`).
 
 6. configure aws cli:
 ```
@@ -310,7 +309,7 @@ systemctl restart poa-parity
 su moc
 git clone https://github.com/poanetwork/poa-network-consensus-contracts.git
 cd poa-network-consensus-contracts
-git checkout  <correct branch name>
+git checkout master
 npm install
 ```
 and run the following command to deploy other contracts from the consensus (change `POA_NETWORK_CONSENSUS_ADDRESS` accordingly if you changed `safeContract` in spec.json):
@@ -318,6 +317,7 @@ and run the following command to deploy other contracts from the consensus (chan
 SAVE_TO_FILE=true POA_NETWORK_CONSENSUS_ADDRESS=0xf472e0e43570b9afaab67089615080cf7c20018d MASTER_OF_CEREMONY=<MOC_ADDRESS> ./node_modules/.bin/truffle migrate --reset --network sokol
 ```
 copy and save the output as it contains addresses to which other contracts were deployed.
+Also, `contracts.json` will be generated. Copy it and paste to the forked `chain-spec` repository.
 
 8. To distribute initial tokens, go to (you are under `moc` user, not `root`!)
 ```
