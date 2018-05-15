@@ -32,12 +32,12 @@ https://github.com/poanetwork/poa-network-consensus-contracts
 npm i
 MASTER_OF_CEREMONY=0x0039F22efB07A647557C7C5d17854CFD6D489eF3 node poa-bytecode.js
 ```
-where MASTER_OF_CEREMONY is the public address of Master of Ceremony from previous step.
+where MASTER_OF_CEREMONY is the public address of Master of Ceremony from the previous step.
 It will show the bytecode of `PoaNetworkConsensus` contract. Copy the bytecode and paste it into `spec.json` in the next step.
 
 ### Chain.json
 https://github.com/poanetwork/poa-chain-spec
-1. Create a separate branch named `NetworkName`
+1. Create a separate branch named `NetworkName` based on `Sokol`
 
 2. Change "name" to `NetworkName`.
 
@@ -48,7 +48,7 @@ https://github.com/poanetwork/poa-chain-spec
 ```
 "stepDuration": 5,
 ```
-3.b. in "params" block add the following lines to swith unlces off:
+3.b. in "params" block add the following lines to switch uncles off:
 ```
     "maximumUncleCountTransition": 0,
     "maximumUncleCount": 0
@@ -57,7 +57,7 @@ https://github.com/poanetwork/poa-chain-spec
 
 4. Scroll down to "accounts" block and replace constructor for "0xf472e0e43570b9afaab67089615080cf7c20018d" with bytecode you obtained from POA Network Consensus contract "0x606060..."
 
-5. Replace address of account with huge amount of money with your MoC address
+5. Replace address of account with a huge amount of money with your MoC address
 
 6. Open `bootnodes.txt` and remove all lines from this file
 
