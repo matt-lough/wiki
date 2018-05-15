@@ -21,17 +21,19 @@ Please be consistent with naming of branches and use `NetworkName`.
 
 ### POA Network Consensus contract
 https://github.com/poanetwork/poa-network-consensus-contracts
-1. Create a separate branch named `NetworkName`
-Steps 2-6 should be done if there are no files in `flat/` folder  
-2. Clone it to your local machine
-3. Install `python3`, `pip3`, `solc`: **make sure to use binary package for solc, not the one from npm** http://solidity.readthedocs.io/en/develop/installing-solidity.html#binary-packages
-4. Install `pip3 install solidity-flattener`
-5. Run `npm install`
-6. Run `./make_flat.sh` to generate flat versions of contracts. They will be saved to `flat/`
+1. Clone it to your local machine `git clone https://github.com/poanetwork/poa-network-consensus-contracts -b master`
+2. Install `python3`, `pip3`, `solc`: **make sure to use binary package for solc, not the one from npm** http://solidity.readthedocs.io/en/develop/installing-solidity.html#binary-packages
+3. Install `pip3 install solidity-flattener`
+4. Run `npm install`
+5. Run `./make_flat.sh` to generate flat versions of contracts. They will be saved to `flat/`
 
-7. Open [Remix](http://remix.ethereum.org/) in your browser, copy-paste code from `flat/PoaNetworkConsensus_flat.sol`, press "Start to compile".
-8. On "Run" tab select "Javascript VM" as environment, "PoaNetworkConsensus" as your contract, in "Create" field paste MoC's address and empty array of validators: `"0x...", []` and click "Create"
-9. After the contract is compiled click "Details" button and copy it's bytecode
+6. Go to `scripts` directory and run `poa-bytecode.js`
+```bash
+npm i
+MASTER_OF_CEREMONY=0x0039F22efB07A647557C7C5d17854CFD6D489eF3 node poa-bytecode.js
+```
+where MASTER_OF_CEREMONY is the public address of Master of Ceremony from previous step.
+It will show the bytecode of `PoaNetworkConsensus` contract. Copy the bytecode and paste it into `spec.json` in the next step.
 
 ### Chain.json
 https://github.com/poanetwork/poa-chain-spec
