@@ -367,15 +367,36 @@ ansible-playbook -i hosts site.yml
 ## Chapter IV - in which MoC prepares other repositories
 
 ### DApp - Keys generation  
-https://github.com/poanetwork/poa-dapps-keys-generation/tree/mainnet
+https://github.com/poanetwork/poa-dapps-keys-generation/tree/core
 
 1. in `src/getWeb3.js` change number to `NetworkID`
-    switch (netId) {
+    `switch (netId) {`
 
 2. in `src/keysManager.js` change `KEYS_MANAGER_ADDRESS` to the one you obtained when deploying other contracts of consensus
 
-### DApp - other DApps?
+### DApp - Validators
+https://github.com/poanetwork/poa-dapps-validators/tree/core
 
+1. in `src/getWeb3.js` change number to `NetworkID`
+    `switch (netId) {`
+
+2. in `src/contracts/addresses.js` uncomment `const local = {` constant and change addresses of corresponding contracts to those, you obtained when deploying other contracts of consensus
+
+3. change line `resolve({addresses: json, web3Config});` to `resolve({addresses: local, web3Config});`
+
+### DApp - Voting
+https://github.com/poanetwork/poa-dapps-voting/tree/core
+
+1. in `src/getWeb3.js` change number to `NetworkID`
+    `switch (netId) {`
+
+2. in `src/contracts/addresses.js` uncomment `const local = {` constant and change addresses of corresponding contracts to those, you obtained when deploying other contracts of consensus
+
+3. in `switch (netId) {` add your networkID with returning `local` constant:
+```
+case 'your_network_ID':
+            return local
+```
 
 ### Repository with scripts for `moc` node
 https://github.com/poanetwork/poa-scripts-moc/tree/master
