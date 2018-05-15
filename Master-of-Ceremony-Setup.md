@@ -59,7 +59,17 @@ https://github.com/poanetwork/poa-chain-spec
 
 5. Replace address of account with a huge amount of money with your MoC address
 
-6. Open `bootnodes.txt` and remove all lines from this file
+6. Inside `engine.authorityRound.params.validators.multi` remove values other than `0`. So, the final result should look like this
+```
+"validators": {
+          "multi": {
+            "0": {
+              "safeContract": "0x8bf38d4764929064f2d4d3a56520a76ab3df415b"
+            }
+          }
+```
+
+7. Open `bootnodes.txt` and remove all lines from this file
 
 ### Ansible playbook
 https://github.com/poanetwork/deployment-playbooks
