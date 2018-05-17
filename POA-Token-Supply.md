@@ -10,7 +10,6 @@ POA's initial token supply when Core network was launched was __252,460,800 POA_
 ## Current circulating supply
 The circulating supply of POA can be calculated by using the formula below. You can also check out the total circulating supply by going to the [Total POA](https://poaexplorer.com/tools/totalpoa) API endpoint.  
 
-- __252,460,800 POA__ minus __20%__ (6 Month Lock) is equal to __214,591,680 POA__ 
 - __214,591,680 POA__ plus __SUM__ of __Number of Current Blocks__  
 
 ## After the core launch
