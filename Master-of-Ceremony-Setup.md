@@ -22,12 +22,9 @@ Please be consistent with naming of branches and use `NetworkName`.
 ### POA Network Consensus contract
 https://github.com/poanetwork/poa-network-consensus-contracts
 1. Clone it to your local machine `git clone https://github.com/poanetwork/poa-network-consensus-contracts -b master`
-2. Install `python3`, `pip3`, `solc`: **make sure to use binary package for solc, not the one from npm** http://solidity.readthedocs.io/en/develop/installing-solidity.html#binary-packages
-3. Install `pip3 install solidity-flattener`
-4. Run `npm install`
-5. Run `./make_flat.sh` to generate flat versions of contracts. They will be saved to `flat/`
-
-6. Go to `scripts` directory and run `poa-bytecode.js`
+2. Install `solc`: **make sure to use binary package for solc, not the one from npm** http://solidity.readthedocs.io/en/develop/installing-solidity.html#binary-packages
+3. Run `npm install`
+4. Go to `scripts` directory and run `poa-bytecode.js`
 ```bash
 npm i
 MASTER_OF_CEREMONY=0x0039F22efB07A647557C7C5d17854CFD6D489eF3 node poa-bytecode.js
