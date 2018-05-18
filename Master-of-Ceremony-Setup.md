@@ -56,12 +56,12 @@ https://github.com/poanetwork/poa-chain-spec
 
 5. Replace address of account with a huge amount of money with your MoC address
 
-6. Inside `engine.authorityRound.params.validators.multi` remove values other than `0`. So, the final result should look like this
+6. Inside `engine.authorityRound.params.validators.multi` remove values other than `0`. So, the final result should look like this (change `<POA_NETWORK_CONSENSUS_CONTRACT_ADDRESS>` to the actual POANetworkConsensus contract address)
 ```
 "validators": {
           "multi": {
             "0": {
-              "safeContract": "0x8bf38d4764929064f2d4d3a56520a76ab3df415b"
+              "safeContract": "<POA_NETWORK_CONSENSUS_CONTRACT_ADDRESS>"
             }
           }
 ```
@@ -321,7 +321,7 @@ npm install
 ```
 and run the following command to deploy other contracts from the consensus (change `POA_NETWORK_CONSENSUS_ADDRESS` accordingly if you changed `safeContract` in spec.json):
 ```
-SAVE_TO_FILE=true POA_NETWORK_CONSENSUS_ADDRESS=0xf472e0e43570b9afaab67089615080cf7c20018d MASTER_OF_CEREMONY=<MOC_ADDRESS> ./node_modules/.bin/truffle migrate --reset --network sokol
+SAVE_TO_FILE=true POA_NETWORK_CONSENSUS_ADDRESS=<POA_NETWORK_CONSENSUS_CONTRACT_ADDRESS> MASTER_OF_CEREMONY=<MOC_ADDRESS> ./node_modules/.bin/truffle migrate --reset --network sokol
 ```
 copy and save the output as it contains addresses to which other contracts were deployed.
 Also, `contracts.json` will be generated. Copy it and paste to the forked `chain-spec` repository.
