@@ -1,5 +1,3 @@
-__POA Network is NOT an ERC20 token, but is ERC20 Compatiable. POA has its own blockchain, networks and is the first of its kind. The network is a working progress, features and additions will be added/completed in a timely manner.__
-
 __We have created a support portal which will include FAQ and tutorials on all things POA related. If you are having any issues with any of POA services, please send a support ticket to our Zendesk portal linked below__
 
 ## POA Network Support Channels
