@@ -191,7 +191,7 @@ When the transaction is mined, `tx_id` is returned to the client and then via th
 
 Having fetched the address from the contract, the server calls postoffice's api (lob.com) to create a postcard. Server uses the session code to get plain text confirmation code from memory and print it on the postcard. Then the server removes this session code from memory to prevent reuse.
 
-When the postcard arrives, the user enters the confirmation code in DApp that invokes the contract's method directly, without server interaction, as there doesn't seem to be any need in signing with the `owner`'s private key. Contract computes the confirmation code's hash and loops over the user's addresses to find the matching one.
+When the postcard arrives, the user enters the confirmation code in DApp, DApps gets signature from the server and invokes the contract's method. Contract verifies signature, computes the confirmation code's hash and loops over the user's addresses to find the matching one.
 
 Possible cheating:
 1. _user can generate his/her own confirmation code, compute all hashes and submit it to the contract, and then confirm it_
