@@ -9,7 +9,7 @@ Prerequisites:
 
 ## Chapter I - in which MoC creates his secret keys and never shows them to others
 
-You will need to generate ethereum address and keystore file for the `owner`.  
+You will need to generate ethereum address and keystore file for the `MoC` (Master of Ceremony).  
 One way is to download `etherwallet-v*.*.*.*.zip` archive of the latest release from myetherwallet github repo https://github.com/kvhnuke/etherwallet/releases/
 then unplug your computer from the Internet, extract zip archive and open `index.html` in your browser.
 Please be sure to use strong password, download keystore file `UTC--*--*`, your private key and keep them in a safe place.
