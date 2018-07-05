@@ -17,4 +17,4 @@ Some of the available features available on this mobile wallet are:
     - PIN Protection
     - Integration with Ledger Nano S & Trezor Hardware Wallets
 
-    Check out [CitoWise's Whitepaper](https://citowise.com/pages/citowise-whitepaper-en.pdf) to get all the info you need on this Mobile Wallet.
+Check out __CitoWise's Whitepaper__ (https://citowise.com/pages/citowise-whitepaper-en.pdf) to get all the info you need on this Mobile Wallet.
