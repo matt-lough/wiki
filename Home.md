@@ -2,7 +2,7 @@
 
 # POA Network Wiki
 
-POA Network is the first Ethereum-based public network with Proof of Authority consensus, reached by independent validators. We are building a public network for smart contracts that combines speed, security, and cost efficiency. We see POA Network as a first step towards realizing our vision of horizontal blockchains scalability by creating a swarm of blockchains with Proof of Authority consensus, connected by interledger protocols. 
+POA Network is the first Ethereum-based public network with Proof of Authority consensus, reached by independent validators. We are building a public network for smart contracts that combines speed, security, and cost efficiency. We see POA Network as a first step towards realizing our vision of horizontal blockchains scalability by creating a swarm of blockchains with Proof of Authority consensus, connected by interledger protocols.
 
 * Getting Started
     * [Installation](POA-Installation)
@@ -43,7 +43,7 @@ POA Network is the first Ethereum-based public network with Proof of Authority c
         *  [Manage Validator Ballots]( Manage-Validator-Ballots)
         *  [Set Validator Metadata](Validator-Set-Metadata)
     * Role of Validator
-        * [Overview](Role-of-Validator) 
+        * [Overview](Role-of-Validator)
         * [Validator Keys and Passwords](Validator-Keys-and-Passwords)
 
 ---
@@ -57,14 +57,16 @@ __POA Network is NOT an ERC20 token, but is ERC20 Compatiable. POA has its own b
 
 ### POA Network Block Explorers
 - Core (live) Explorer: [https://core-explorer.poa.network/](https://core-explorer.poa.network/)
-- Community Made POA Core Explorer: [https://poaexplorer.com/](https://poaexplorer.com/)    
+- Community Made POA Core Explorer: [https://poaexplorer.com/](https://poaexplorer.com/)
     Made by Telegram Community Member, [Andrew Cravenho](https://github.com/acravenho)
-    
-    
+
+
 ## For developers:
 
 ### Core (live)
 
+- Core (live) RPC infura.io endpoint: `https://poa.infura.io`
+- Core (live) RPC infura.io WebSocket endpoint: `wss://poa.infura.io/ws`
 - Core (live) RPC endpoint: `https://core.poa.network`
 - Core (live) Netstats: [https://core-netstat.poa.network/](https://core-netstat.poa.network/)
 
@@ -73,7 +75,7 @@ __POA Network is NOT an ERC20 token, but is ERC20 Compatiable. POA has its own b
 - Sokol (test) RPC endpoint: `https://sokol.poa.network`
 - Sokol (test) Faucet: [https://faucet-sokol.herokuapp.com/](https://faucet-sokol.herokuapp.com/)
 - Sokol (test) Explorer: [https://sokol-explorer.poa.network/](https://sokol-explorer.poa.network/)
-- Sokol (test) Netstats: [https://sokol-netstat.poa.network/](https://sokol-netstat.poa.network/)☺
+- Sokol (test) Netstats: [https://sokol-netstat.poa.network/](https://sokol-netstat.poa.network/)
 
 Sokol Validator DApp URLs: ( For now -- please use the following URLs )
 
