@@ -90,7 +90,7 @@ There are 56,048,767 transactions on the network. Security of a transaction in t
 
 #### Solution
 
-In POA Network the issuance rate is 3.5% with future disinflation. There is no Mining Uncle Reward in the network, because consensus is not based on Proof of Work.
+In POA Network the issuance rate is 2.5% with future disinflation. There is no Mining Uncle Reward in the network, because consensus is not based on Proof of Work.
 
 
 ### Validators with known identity
