@@ -16,13 +16,13 @@
 6. __ATTENTION:__ This next part is __VERY__ important and must be done correctly in order to be able to participate in the consensus immediately, follow directions below __BEFORE__ closing out of the browser window. Open up a Notepad and copy required info as follows.
 - Click the `Copy` Button next to each `Address`. Mining, Payout, Voting. Paste them separately in the Notepad.
 - Click the `Copy` Button next to each `Password`, matching to resulting address in the Notepad. Mining, Payout, Voting.
-- Finally, Click Button to download the JSON Keystore files for each key and keep the Notepad file & all 3 keys + initial key somewhere safe.  
-__*NOTE*__  
-Preferred method to store the keyfiles and information is to store on an encrypted drive. e.g. usb drive  
+- Finally, Click Button to download the JSON Keystore files for each key and keep the Notepad file & all 3 keys + initial key somewhere safe.
+__*NOTE*__
+Preferred method to store the keyfiles and information is to store on an encrypted drive. e.g. usb drive
 If you go this route, please do not forget your password for the encryption as you will lose your data and will have to get your old keys voted out and new ones voted in if any issue happens with the validator's node.
 
 ### After Ceremony Stage: Validators vote in new validators
-After the initial ceremony stage, it's time for the initial set of validators to vote in new validators using the POA Voting Dapp. One validator will create a Ballot for each of the needed keys to participate and each validator will cast their own vote minus the MoC, who is not allowed to vote on consensus level. It has been agreed upon by the POA network that the next stage would end with 25 Validators on the Core network. This number may change in the future and can have any amount one desires, this would likely be proposed by a ballot to increase.  
+After the initial ceremony stage, it's time for the initial set of validators to vote in new validators using the POA Voting Dapp. One validator will create a Ballot for each of the needed keys to participate and each validator will cast their own vote minus the MoC, who is not allowed to vote on consensus level. It has been agreed upon by the POA network that the next stage would end with 25 Validators on the Core network. This number may change in the future and can have any amount one desires, this would likely be proposed by a ballot to increase.
 
 Before the ballot can be proposed, the applicant would need to generate 3 separate key pairs with passwords & JSON keyfiles. There is a very simple method of doing this, see below.
 1. Simply go to this URL in your browser to generate 3 key/pass pairs with needed keyfiles.
@@ -30,8 +30,8 @@ Before the ballot can be proposed, the applicant would need to generate 3 separa
 6. __ATTENTION:__ This next part is __VERY__ important and must be done correctly in order to be able to participate in the consensus immediately, follow directions below __BEFORE__ closing out of the browser window. Open up a Notepad and copy required info as follows.
 - Click the `Copy` Button next to each `Address`. Mining, Payout, Voting. Paste them separately in the Notepad.
 - Click the `Copy` Button next to each `Password`, matching to resulting address in the Notepad. Mining, Payout, Voting.
-- Finally, Click Button to download the JSON Keystore files for each key and keep the Notepad file & all 3 keys + initial key somewhere safe.  
-__*NOTE*__  
+- Finally, Click Button to download the JSON Keystore files for each key and keep the Notepad file & all 3 keys + initial key somewhere safe.
+__*NOTE*__
 Preferred method to store the keyfiles and information is to store on an encrypted drive. e.g. usb drive. If you go this route, please do not forget your password for the encryption as you will lose your data and will have to get your old keys voted out and new ones voted in if any issue happens with the validator's node.
 
 ##### After you have successfully deployed your node, Submit your Validator MetaData
@@ -111,7 +111,7 @@ brew install awscli
 
 3. Click "Next: Permissions" - you can choose any of the available options, and "Attach existing policies directly" is the simplest one. In the list of policy types, search for and then check "AmazonEC2FullAccess". Click "Next:Review".  Review your account and click "Create user" to proceed.
 
-4. it is very important that you copy "Access Key ID" and "Secret Access Key" without leaving this page, because there is no other way to retrieve "Secret Access Key" later and you will have to start again and create another user. After copying this important information, select "Close". 
+4. it is very important that you copy "Access Key ID" and "Secret Access Key" without leaving this page, because there is no other way to retrieve "Secret Access Key" later and you will have to start again and create another user. After copying this important information, select "Close".
 
 5. after you've copied and saved your AWS secret keys, the next step is to upload your SSH public key. In the top left corner of the page select "Services -> EC2". On the left sidebar select "Network & Security" -> "Key Pairs". Click "Import Key Pair". Give a name to this keypair, otherwise base name of the file will be used (by default `id_rsa`). Browse your Ansible Control Station file system for the public key, or copy/paste:
 ```
@@ -197,7 +197,7 @@ MINING_ADDRESS: "0x..."
 * `allow_validator_p2p` - set this value to `true` to make your node discoverable by peers
 * `associate_validator_elastic_ip` - set this to `true` if you want to configure AWS Elastic IP for this node
 
-6. examine values in `image` and `region` properties. If your AWS region doesn't match the one in `region` you need to replace `region` with the correct one and select image from this list https://cloud-images.ubuntu.com/locator/ec2/ 
+6. examine values in `image` and `region` properties. If your AWS region doesn't match the one in `region` you need to replace `region` with the correct one and select image from this list https://cloud-images.ubuntu.com/locator/ec2/
 
 Open this page, scroll down, choose your region from the first ("Zone") dropdown list, choose `xenial` from the second ("Name") dropdown list and `hvm:ebs-ssd` from the fifth ("Instance type"). This should limit you to a single option, copy value from "AMI-ID" column and paste it in `image` property.
 
@@ -242,7 +242,7 @@ ssh root@192.0.2.1 OR, if root SSH access is not enabled:
 ssh -l ubuntu 192.0.2.1  #NOTE: replace 'ubuntu' with a different remote node user if you are not using the recommended example user.  Once logged in, become Super User by executing:
 
 sudo su    #NOTE:  enter the 'ubuntu' user password, or other user password if you have created a different user.  You should now be Super User, with all of the powers and identity of the 'root' user.  Be careful!
- 
+
 grep enode /home/validator/logs/parity.log
 ```
 copy `enode` uri and send it to Master of Ceremony. If this line is not found, restart parity
@@ -258,7 +258,7 @@ pm2 restart all
 ```
 after that, refresh the `NETSTATS_SERVER` url in your browser and check your node's block number again. If your node is still not active or missing `enode` entry, log in to root account and reboot the OS. PLEASE WAIT at least five minutes for your node to "catch up" before rebooting your remote server, and do so only as a final resort.
 ```
-su 
+su
 shutdown -hr now
 ```
 
@@ -286,3 +286,55 @@ aws ec2 terminate-instances --instance-ids i-0123456789abcdef0
 (replace `i-0123456789abcdef0` with your actual AWS InstanceID).
 
 NOTE: this operation is irreversible!  If you want to redeploy, you will have to create a new instance from scratch.
+
+### Upgrade instance to a larger instance type
+1. Login to your AWS console. In "Services" select "EC2" and navigate to "Instances" > "Instances" in the left sidebar. You should see a list of all your instances in the current region, similar to this:
+[Instances List!](https://raw.githubusercontent.com/poanetwork/wiki/master/assets/imgs/node-type-upgr-1.png)
+Select the instance you want to upgrade. **Double check IP address to verify that you're upgrading correct node from correct network**
+
+2. Click "Actions", from dropdown select "Instance State" > "Stop"
+[Stop Instance!](https://raw.githubusercontent.com/poanetwork/wiki/master/assets/imgs/node-type-upgr-2.png)
+Confirm the instance you want to stop.
+
+3. Wait until "Instance state" changes to "stopped", then click "Actions" and select "Instance settings" > "Change instance type"
+[Change instance type!](https://raw.githubusercontent.com/poanetwork/wiki/master/assets/imgs/node-type-upgr-3.png)
+Select the new instance type (e.g. `t2.xlarge`)
+[Select new instance type!](https://raw.githubusercontent.com/poanetwork/wiki/master/assets/imgs/node-type-upgr-4.png)
+Click OK to confirm.
+
+4. Check that value in "Instance type" column on the instances list was updated
+
+5. Click "Actions", then "Instance state" > "Start"
+[Start new instance!](https://raw.githubusercontent.com/poanetwork/wiki/master/assets/imgs/node-type-upgr-4.png)
+
+6. Wait until "Instance state" changes to "running". Also check in netstat dashboard ([sokol netstat](https://sokol-netstat.poa.network/)/[core netstat](https://core-netstat.poa.network/)) that your node is green and catching up. This may take some time to settle down.
+
+7. Back to AWS page, it is important that **After upgrade your node's public IP address will change**. You should note and save the new IP address in "IPv4 Public IP" column.
+
+8. Login to your node via ssh, e.g.
+```
+ssh root@192.0.2.1
+```
+
+9. Edit parity configuration file to update your public ip address. To do this open file in your favourite text editor (e.g. `nano`)
+```
+nano /home/validator/node.toml
+```
+Search for a row similar to
+```
+nat = "extip:192.0.2.1"
+```
+change IP address in this line to a new one, e.g.
+```
+nat = "extip:192.0.2.2"
+```
+Save and exit text editor (for `nano`, press <kbd>CTRL+X</kbd> then <kbd>y</kbd>).
+
+10. Restart parity and netstats
+```
+sudo systemctl restart poa-parity
+```
+Restart netstats
+```
+sudo systemctl restart poa-netstats
+```
