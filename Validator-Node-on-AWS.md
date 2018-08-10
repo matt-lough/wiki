@@ -289,23 +289,23 @@ NOTE: this operation is irreversible!  If you want to redeploy, you will have to
 
 ### Upgrade instance to a larger instance type
 1. Login to your AWS console. In "Services" select "EC2" and navigate to "Instances" > "Instances" in the left sidebar. You should see a list of all your instances in the current region, similar to this:
-[Instances List!](https://raw.githubusercontent.com/poanetwork/wiki/master/assets/imgs/node-type-upgr-1.png)
+![Instances List](https://raw.githubusercontent.com/poanetwork/wiki/master/assets/imgs/node-type-upgr-1.png)
 Select the instance you want to upgrade. **Double check IP address to verify that you're upgrading correct node from correct network**
 
 2. Click "Actions", from dropdown select "Instance State" > "Stop"
-[Stop Instance!](https://raw.githubusercontent.com/poanetwork/wiki/master/assets/imgs/node-type-upgr-2.png)
+![Stop Instance](https://raw.githubusercontent.com/poanetwork/wiki/master/assets/imgs/node-type-upgr-2.png)
 Confirm the instance you want to stop.
 
 3. Wait until "Instance state" changes to "stopped", then click "Actions" and select "Instance settings" > "Change instance type"
-[Change instance type!](https://raw.githubusercontent.com/poanetwork/wiki/master/assets/imgs/node-type-upgr-3.png)
+![Change instance type](https://raw.githubusercontent.com/poanetwork/wiki/master/assets/imgs/node-type-upgr-3.png)
 Select the new instance type (e.g. `t2.xlarge`)
-[Select new instance type!](https://raw.githubusercontent.com/poanetwork/wiki/master/assets/imgs/node-type-upgr-4.png)
+![Select new instance type](https://raw.githubusercontent.com/poanetwork/wiki/master/assets/imgs/node-type-upgr-4.png)
 Click OK to confirm.
 
 4. Check that value in "Instance type" column on the instances list was updated
 
 5. Click "Actions", then "Instance state" > "Start"
-[Start new instance!](https://raw.githubusercontent.com/poanetwork/wiki/master/assets/imgs/node-type-upgr-4.png)
+![Start new instance](https://raw.githubusercontent.com/poanetwork/wiki/master/assets/imgs/node-type-upgr-4.png)
 
 6. Wait until "Instance state" changes to "running". Also check in netstat dashboard ([sokol netstat](https://sokol-netstat.poa.network/)/[core netstat](https://core-netstat.poa.network/)) that your node is green and catching up. This may take some time to settle down.
 
