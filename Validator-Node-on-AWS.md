@@ -305,7 +305,7 @@ Click OK to confirm.
 4. Check that value in "Instance type" column on the instances list was updated
 
 5. Click "Actions", then "Instance state" > "Start"
-![Start new instance](https://raw.githubusercontent.com/poanetwork/wiki/master/assets/imgs/node-type-upgr-4.png)
+![Start new instance](https://raw.githubusercontent.com/poanetwork/wiki/master/assets/imgs/node-type-upgr-5.png)
 
 6. Wait until "Instance state" changes to "running". Also check in netstat dashboard ([sokol netstat](https://sokol-netstat.poa.network/)/[core netstat](https://core-netstat.poa.network/)) that your node is green and catching up. This may take some time to settle down.
 
