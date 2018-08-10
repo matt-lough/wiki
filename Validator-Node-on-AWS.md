@@ -338,3 +338,5 @@ Restart netstats
 ```
 sudo systemctl restart poa-netstats
 ```
+
+11. Check again that your node is green in netstats.
