@@ -5,7 +5,7 @@ Running a full node that is synced to POA Network's blockchain will require you 
 
 ### Ubuntu/Debian & MacOS with Homebrew one-line Binary Installation
 This method is for Ubuntu/Debian based OS and MacOS machines with Homebrew installed. Faster than building from source, but no cutting edge features or latest version. If you would like to build from [source](https://github.com/paritytech/parity) or download binary release, see the official [Parity Releases Page](https://github.com/paritytech/parity/releases).   
-  Please use `Parity v1.8.5`. 
+  Please use a stable version `Parity`. 
 
 - Open a bash Terminal and enter the command below, if the client needs an update just simply run the command a second time.  
   ```

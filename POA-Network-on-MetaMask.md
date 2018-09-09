@@ -13,7 +13,7 @@ _Note that this plugin is currently available only for Mozilla Firefox v42.0 or 
 
 2. Enter the one of the RPC connection urls (however, if master of the ceremony explicitly provided you with another connection url you should use it).
 
-- POA Core Network: `https://core.poa.network`
+- POA Core Network: `https://poa.infura.io`
 - POA Sokol Network: `https://sokol.poa.network`
 
 Note: _url on the screenshot below is just an example_

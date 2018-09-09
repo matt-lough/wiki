@@ -9,7 +9,7 @@ Prerequisites:
 
 ## Chapter I - in which MoC creates his secret keys and never shows them to others
 
-You will need to generate ethereum address and keystore file for the `owner`.  
+You will need to generate ethereum address and keystore file for the `MoC` (Master of Ceremony).  
 One way is to download `etherwallet-v*.*.*.*.zip` archive of the latest release from myetherwallet github repo https://github.com/kvhnuke/etherwallet/releases/
 then unplug your computer from the Internet, extract zip archive and open `index.html` in your browser.
 Please be sure to use strong password, download keystore file `UTC--*--*`, your private key and keep them in a safe place.
@@ -21,21 +21,20 @@ Please be consistent with naming of branches and use `NetworkName`.
 
 ### POA Network Consensus contract
 https://github.com/poanetwork/poa-network-consensus-contracts
-1. Create a separate branch named `NetworkName`
-Steps 2-6 should be done if there are no files in `flat/` folder  
-2. Clone it to your local machine
-3. Install `python3`, `pip3`, `solc`: **make sure to use binary package for solc, not the one from npm** http://solidity.readthedocs.io/en/develop/installing-solidity.html#binary-packages
-4. Install `pip3 install solidity-flattener`
-5. Run `npm install`
-6. Run `./make_flat.sh` to generate flat versions of contracts. They will be saved to `flat/`
-
-7. Open [Remix](http://remix.ethereum.org/) in your browser, copy-paste code from `flat/PoaNetworkConsensus_flat.sol`, press "Start to compile".
-8. On "Run" tab select "Javascript VM" as environment, "PoaNetworkConsensus" as your contract, in "Create" field paste MoC's address and empty array of validators: `"0x...", []` and click "Create"
-9. After the contract is compiled click "Details" button and copy it's bytecode
+1. Clone it to your local machine `git clone https://github.com/poanetwork/poa-network-consensus-contracts -b master`
+2. Install `solc`: **make sure to use binary package for solc, not the one from npm** http://solidity.readthedocs.io/en/develop/installing-solidity.html#binary-packages
+3. Run `npm install`
+4. Go to `scripts` directory and run `poa-bytecode.js`
+```bash
+npm i
+MASTER_OF_CEREMONY=0x0039F22efB07A647557C7C5d17854CFD6D489eF3 node poa-bytecode.js
+```
+where MASTER_OF_CEREMONY is the public address of Master of Ceremony from the previous step.
+It will show the bytecode of `PoaNetworkConsensus` contract. Copy the bytecode and paste it into `spec.json` in the next step.
 
 ### Chain.json
 https://github.com/poanetwork/poa-chain-spec
-1. Create a separate branch named `NetworkName`
+1. Create a separate branch named `NetworkName` based on `Sokol`
 
 2. Change "name" to `NetworkName`.
 
@@ -46,7 +45,7 @@ https://github.com/poanetwork/poa-chain-spec
 ```
 "stepDuration": 5,
 ```
-3.b. in "params" block add the following lines to swith unlces off:
+3.b. in "params" block add the following lines to switch uncles off:
 ```
     "maximumUncleCountTransition": 0,
     "maximumUncleCount": 0
@@ -55,9 +54,19 @@ https://github.com/poanetwork/poa-chain-spec
 
 4. Scroll down to "accounts" block and replace constructor for "0xf472e0e43570b9afaab67089615080cf7c20018d" with bytecode you obtained from POA Network Consensus contract "0x606060..."
 
-5. Replace address of account with huge amount of money with your MoC address
+5. Replace address of account with a huge amount of money with your MoC address
 
-6. Open `bootnodes.txt` and remove all lines from this file
+6. Inside `engine.authorityRound.params.validators.multi` remove values other than `0`. So, the final result should look like this (change `<POA_NETWORK_CONSENSUS_CONTRACT_ADDRESS>` to the actual POANetworkConsensus contract address)
+```
+"validators": {
+          "multi": {
+            "0": {
+              "safeContract": "<POA_NETWORK_CONSENSUS_CONTRACT_ADDRESS>"
+            }
+          }
+```
+
+7. Open `bootnodes.txt` and remove all lines from this file
 
 ### Ansible playbook
 https://github.com/poanetwork/deployment-playbooks
@@ -65,7 +74,6 @@ https://github.com/poanetwork/deployment-playbooks
 2. Open `group_vars/all.network` and replace the following variables with corresponding branch names (should be `NetworkName` mostly)
 * `SCRIPTS_MOC_BRANCH`
 * `SCRIPTS_VALIDATOR_BRANCH`
-* `TEMPLATES_BRANCH`
 * `GENESIS_BRANCH`
 * `GENESIS_NETWORK_NAME` - **make sure it matches `name` in `spec.json`**
 3. Replace `MOC_ADDRESS` with your MoC address
@@ -87,7 +95,7 @@ https://github.com/poanetwork/deployment-playbooks
 
 4. it is very important that you copy "Access Key ID" and "Secret Access Key" without leaving this page, because there is no other way to retrieve "Secret Access Key" later and you will have to start again and create another user.
 
-5. when you've copied and saved your AWS secret keys, next step is to upload your SSH public key. In the top left corner of the page select "Services > EC2". On the left sidebar select "Network & Security" > "Key Pairs". Click "Import Key Pair". Browse your filesystem for the public key. You can give a name to this keypair, otherwise base name of the file will be used (by default `id_rsa`).
+5. when you've copied and saved your AWS secret keys, next step is to upload your SSH public key. In the top left corner of the page select "Services > EC2". On the left sidebar select "Network & Security" > "Key Pairs". Click "Import Key Pair". Browse your filesystem for the public key. You can give a name to this keypair, otherwise, base name of the file will be used (by default `id_rsa`).
 
 6. configure aws cli:
 ```
@@ -308,14 +316,15 @@ systemctl restart poa-parity
 su moc
 git clone https://github.com/poanetwork/poa-network-consensus-contracts.git
 cd poa-network-consensus-contracts
-git checkout  <correct branch name>
+git checkout master
 npm install
 ```
 and run the following command to deploy other contracts from the consensus (change `POA_NETWORK_CONSENSUS_ADDRESS` accordingly if you changed `safeContract` in spec.json):
 ```
-SAVE_TO_FILE=true POA_NETWORK_CONSENSUS_ADDRESS=0xf472e0e43570b9afaab67089615080cf7c20018d MASTER_OF_CEREMONY=<MOC_ADDRESS> ./node_modules/.bin/truffle migrate --reset --network sokol
+SAVE_TO_FILE=true POA_NETWORK_CONSENSUS_ADDRESS=<POA_NETWORK_CONSENSUS_CONTRACT_ADDRESS> MASTER_OF_CEREMONY=<MOC_ADDRESS> ./node_modules/.bin/truffle migrate --reset --network sokol
 ```
 copy and save the output as it contains addresses to which other contracts were deployed.
+Also, `contracts.json` will be generated. Copy it and paste to the forked `chain-spec` repository.
 
 8. To distribute initial tokens, go to (you are under `moc` user, not `root`!)
 ```
@@ -365,22 +374,43 @@ ansible-playbook -i hosts site.yml
 ## Chapter IV - in which MoC prepares other repositories
 
 ### DApp - Keys generation  
-https://github.com/poanetwork/poa-dapps-keys-generation/tree/mainnet
+https://github.com/poanetwork/poa-dapps-keys-generation/tree/core
 
 1. in `src/getWeb3.js` change number to `NetworkID`
-    switch (netId) {
+    `switch (netId) {`
 
 2. in `src/keysManager.js` change `KEYS_MANAGER_ADDRESS` to the one you obtained when deploying other contracts of consensus
 
-### DApp - other DApps?
+### DApp - Validators
+https://github.com/poanetwork/poa-dapps-validators/tree/core
 
+1. in `src/getWeb3.js` change number to `NetworkID`
+    `switch (netId) {`
+
+2. in `src/contracts/addresses.js` uncomment `const local = {` constant and change addresses of corresponding contracts to those, you obtained when deploying other contracts of consensus
+
+3. change line `resolve({addresses: json, web3Config});` to `resolve({addresses: local, web3Config});`
+
+### DApp - Voting
+https://github.com/poanetwork/poa-dapps-voting/tree/core
+
+1. in `src/getWeb3.js` change number to `NetworkID`
+    `switch (netId) {`
+
+2. in `src/contracts/addresses.js` uncomment `const local = {` constant and change addresses of corresponding contracts to those, you obtained when deploying other contracts of consensus
+
+3. in `switch (netId) {` add your networkID with returning `local` constant:
+```
+case 'your_network_ID':
+            return local
+```
 
 ### Repository with scripts for `moc` node
 https://github.com/poanetwork/poa-scripts-moc/tree/master
 (same steps as you did manually on moc's node):
 1. Create a branch named `NetworkName` from master branch.
 2. Update `contracts.KeysManager.addr` in `config.json` to the one you obtained when deploying other contracts of consensus 
-3. Update `FAT_BALANCE` to MoC's address.
+3. Update `FAT_BALANCE` in `./distributeTokens/.env` to MoC's address.
 
 ### Repository with scripts for `validator` node
 https://github.com/poanetwork/poa-scripts-validator/tree/master

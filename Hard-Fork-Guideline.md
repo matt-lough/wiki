@@ -1,7 +1,7 @@
 What to update if there is upcoming Hard Fork:
 
 1. https://github.com/poanetwork/poa-chain-spec
- * update contracts.txt 
+ * update contracts.json
  * update spec.json
  * update abis folder
 

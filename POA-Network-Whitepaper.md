@@ -90,7 +90,7 @@ There are 56,048,767 transactions on the network. Security of a transaction in t
 
 #### Solution
 
-In POA Network the issuance rate is 3.5% with future disinflation. There is no Mining Uncle Reward in the network, because consensus is not based on Proof of Work.
+In POA Network the issuance rate is 2.5% with future disinflation. There is no Mining Uncle Reward in the network, because consensus is not based on Proof of Work.
 
 
 ### Validators with known identity
@@ -175,7 +175,7 @@ Using Proof of Physical Address, a user can confirm his/her physical address. It
 ![](https://github.com/poanetwork/wiki/blob/master/assets/imgs/poa/papers/whitepaper/proof-of-address.png)
 
 
-[](http://sequencediagram.org/index.html?initialData=C4S2BsFMAIAUCcD2iBm1VwBYE8DOIBjAQ3GgEEATC+SXXAKHqIOEXmgFVdJ56AHIvFAEQAgHbBoAETJ8+0AO6QARv0HDRRCdNnzu8AG496FIsCLKi3aAGUeR9lIBCaoYU3aAwognxmkslgASRMzCysYb19-W1Y-AHNIVw1xSVhEXEl9A0Ik+mVEAA90B059AC5oILFMknBcaABZSHNGqwBrei4eaABaAD4ZOUUVcvoh+SVlAYnobJ5KmwBXZQBbMGgiKho6aBQ2VYAaAB0xFsxN7doGAuLEUtn5+HKANRIQU2AYADJoMQP3gAvGAgMR8JbAfJFEo9R72BbQADikDOfi+0AIPhQIHgqzMIB8GMQFBgAAoCAQAJTjXRzeHwAZ2QywpyVbh0AliaDtSDYaCk3DtSmnADUGIIoug50u1GuTBYIAMZhgTIeLluMMctKeixA8S5Aj8qxaPAYcOZDMGtKmiwAEmQAMzkqmSwWuvViMxLGiS-64oGQCjQUHgyH+RXKnTDKY06MqAZRYB+FjkYKVAAqAA1Kp46tAaPEQJkeAB9Layuik8s7XDUjX3HqJ5MBNPQN7gD6R-D6r00KF3UpNmKBII5zCQAjtGU1qWFIvABhDlMjhM+JMxGxxIiJRZEIzT66Smz2p0U4ViMXS6uHi-QZTgRCTv5LVbKYzhpXopeSTdsbdJb9UyCGZrVGaBgEKEsPljSZ4ytYYdXAyCPldToSQ-SNZhjc0HEZelpFZOZOlVFkQIQ+lKgpSUryuOh+01KM9Ao6BPHHSdTgggA6FAkFWaAAF5+KlYALmvOgOMKTjWAEoTMWiFNEAUVEYLpC1V3kltR2gAAxUEgzEhoC3nHhA1OAABJDOPvR92gAORfN9eEAld4KYi1KkoCsGk+IgVKeAZ0kyVScgISBKJoZUSz4DJgGIeAgyrWjcEOcVqXQhVPxVfDnHoQKsnsXIBm6Z5pEgDtSmizI4ooLp9DI2DlDGLC4Oc1ssxzPMlQ7T5IBLOTsX9UAfD64lIGdOtoQbdhWq03SxH0pLTgUMALjxWLMFBeJxXoGb1PXFNfwSMKWKxeAQFWRh6CAA)
+[](http://sequencediagram.org/index.html#initialData=C4S2BsFMAIAUCcD2iBm1VwBYE8DOIBjAQ3GgEEATC+SXXAKHqIOEXmgFVdJ56AHIvFAEQAgHbBoAETJ8+0AO6QARv0HDRRCdNnzu8AG496FIsCLKi3aAGUeR9lIBCaoYU3aAwognxmkslgASRMzCysYb19-W1Y-AHNIVw1xSVhEXEl9A0Ik+mVEAA90B059AC5oILFMknBcaABZSHNGqwBrei4eaABaAD4ZOUUVcvoh+SVlAYnobJ5KmwBXZQBbMGgiKho6aBQ2VYAaAB0xFsxN7doGAuLEUtn5+HKANRIQU2AYADJoMQP3gAvGAgMR8JbAfJFEo9R72BbQADikDOfi+0AIPhQIHgqzMIB8GMQFBgAAoCAQAJTjXRzeHwAZ2QywpyVbh0AliaDtSDYaCk3DtSmnADUGIIoug50u1GuTBYIAMZhgTIeLluMMctKeixA8S5Aj8qxaPAYcOZDMGtKmiwAEmQAMzkqmSwWuvViMxLGiS-64oGQCjQUHgyH+RXKnTDKY06MqAZRYB+FjkYKVAAqAA1Kp46tAaPEQJkeAB9Layuik8s7XDUjX3HqJ5MBNPQN7gD6R-D6r00KF3UpNmKBII5zCQAjtGU1qWFIvABhDlMjhM+JMxGxxIiJRZEIzT66Smz2p0U4ViMXS6uHi-QZTgRCTv5LVbKYzhpXopeSTdsbdJb9UyCGZrVGaBgEKEsPljSZ4ytYYdXAyCPldToSQ-SNZhjc0HEZelpFZOZOlVFkQIQ+lKgpSUryuOh+01KM9Ao6BPHHSdTgggA6FAkFWaAAF5+KlYALmvOgOMKTjWAEoTMWiFNEAUVEYLpC1V3kltR2gAAxUEgzEhoC3nHhA1OAABJDOPvR92gAORfN9eEAld4KYi1KkoCsGk+IgVKeAZ0kyVScgISBKJoZUSz4DJgGIeAgyrWjcEOcVqXQhVPxVfDnHoQKsnsXIBm6Z5pEgDtSmizI4ooLp9DI2DlDGLC4JwhZ6IbLVyPc2wPWgQ0iGNL54DNbV6XqkZGrmD1eySZrpn6ZzWyzHM8yVDtPkgEs5Oxf1QB8LbiUgZ0Uu7T1gG9SA62hDqWLXZsgMqXSxH0pLTgUMALjxWLMFBeJxXoRbgIWu6Ny3HdbrEHiQFWRh6CAA)
 
 User fills out a form in DApp and submits it to the server.
 
@@ -191,7 +191,7 @@ When the transaction is mined, `tx_id` is returned to the client and then via th
 
 Having fetched the address from the contract, the server calls postoffice's api (lob.com) to create a postcard. Server uses the session code to get plain text confirmation code from memory and print it on the postcard. Then the server removes this session code from memory to prevent reuse.
 
-When the postcard arrives, the user enters the confirmation code in DApp that invokes the contract's method directly, without server interaction, as there doesn't seem to be any need in signing with the `owner`'s private key. Contract computes the confirmation code's hash and loops over the user's addresses to find the matching one.
+When the postcard arrives, the user enters the confirmation code in DApp, DApps gets signature from the server and invokes the contract's method. Contract verifies signature, computes the confirmation code's hash and loops over the user's addresses to find the matching one.
 
 Possible cheating:
 1. _user can generate his/her own confirmation code, compute all hashes and submit it to the contract, and then confirm it_

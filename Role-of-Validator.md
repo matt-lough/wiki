@@ -37,4 +37,3 @@ A Validator has both technical and social responsiblities both of which are impo
 
 ## Background/Further Reading
 * [Introducing POA Network](https://medium.com/oracles-network/introducing-oracles-network-864d1d7e37e2)
-* [POA Network Eco-System](https://medium.com/oracles-network/introducing-oracles-network-864d1d7e37e2)
