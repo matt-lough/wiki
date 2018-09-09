@@ -40,9 +40,6 @@ POA/POA20 is available on the following exchanges and will be announced when mor
 
   POA20 tokens allow two standalone blockchains to safely and securely interact with each other through cross-chain bridges. It’s a critical step towards solving the scalability and connectivity issues and opens up a whole new avenue of solutions and use cases.
 
- __Will POA be on EtherDelta exchange?__    
-  No, POA is not an ERC20 token and will __NOT__ be listed on ED at the end of Inception stage. Any POA currently on ED is either a scam or another token with same ticker, please do your own due-diligence before investing in any token.
-
 To see which stage POA is currently on and information about the next stage, please see POA's Medium post. [POA Network Stages.](https://medium.com/oracles-network/poa-network-day-1-poa-network-inception-188e5688ea98) 
 
 ## __*Attention*__  
