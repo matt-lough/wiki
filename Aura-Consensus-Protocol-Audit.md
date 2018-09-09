@@ -76,7 +76,7 @@ If this understanding is correct, the finality condition should be consistently 
 
 ### Finality delay
 
-A minimum of `n_v/2 + 1` validations being required, withn_vthe number of validators. At least `2(n_v/+ 1) = n_v + 2` message round trips are therefore necessary before a block is finalized by all validators. In the worst case, after exactly `n_v` validations, the delay will instead be of `2n_v + 2`. If multiple blocks are proposed for validation, the voting will add at least `2n_v` round trips.  
+A minimum of `n_v/2 + 1` validations being required, with `n_v` the number of validators. At least `2(n_v/2 + 1) = n_v + 2` message round trips are therefore necessary before a block is finalized by all validators. In the worst case, after exactly `n_v` validations, the delay will instead be of `2n_v + 2`. If multiple blocks are proposed for validation, the voting will add at least `2n_v` round trips.  
   The average delay may be estimated empirically, based on the number of validations of a block or series
 thereof.
 
@@ -103,7 +103,7 @@ This is for example executed in Aura’s `is_epoch_end()` function in the line
 ```
     .map(|h| if h == chain_head.hash() {
 ```
-This does not create a security, however, since the buffer size (32 bytes) is hardcoded and can’t be controlled by an attacher.
+This does not create a security, however, since the buffer size (32 bytes) is hardcoded and can’t be controlled by an attacker.
 
 ### Step number cast from 64- to 32-bit
 
