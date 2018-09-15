@@ -66,4 +66,4 @@
     - POA Network Whitepaper can be found on POA's wiki, [here](https://github.com/poanetwork/wiki/wiki/POA-Network-Whitepaper).
 
 17. Which wallets are supported by POA?
-    - POA is currently supported by the following wallets, but not limited to. MyEtherWallet, MetaMask, Parity, Ledger, Trezor, Trust Ethereum Mobile wallet and Coinomi Android wallet. There are guides for many of these wallets located in the side menu of this wiki and located on [POA Foundation Website](https://poa.network/tokens).
+    - POA is currently supported by the following wallets, but not limited to. MyEtherWallet, MetaMask, Parity, Ledger, Trezor, Trust Ethereum Mobile wallet and Coinomi Android wallet. There are guides for many of these wallets located in the side menu of this wiki and located on [POA Foundation Website](https://poa.network/dapps?category=wallets).
