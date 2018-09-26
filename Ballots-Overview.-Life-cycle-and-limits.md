@@ -47,10 +47,10 @@ Here is the ballot's voting and finalization lifecycle, for example, for the bal
 
 ## Limits
 To prevent Validators from spamming the network with nonsense Ballots, there exist limits on each Ballot type.
-Current limits are as follows:
+At the time of this writing, current limits are as follows:
 *  Validator Management Ballot: 9 active ballots at one time
 *  Consensus Threshold Ballot: 9 active ballots at one time
 *  Modify Proxy Contract Ballot: 9 active ballots at one time
-   * *NOTE* For allowed active votes per validator, we currently use the following formula: [200/((N/2) +1)] where N= NumberOfActiveValidators.  Example with 20 TotalActiveValidators:  200 / ((20/2)+1) = 200/11 = 18 (rounded) - this is the maximum active ballots allowed to one Validator.  As number of Validators increases, this number reduces.
+   * *NOTE* For allowed active votes per validator, we currently use the following formula: [200/N] where N= NumberOfActiveValidators (excluding Master of Ceremony).  Example with 21 TotalActiveValidators:  200 / 21 = 9 (as an integer) - this is the maximum active ballots allowed to one Validator.  As a number of Validators increases, this number reduces.
 
 _**NOTE:**_ Ballots need to be thoughtful and should only be proposed by a Validator if they can defend the Ballot and explain the Ballot's benefit to the network.  Inappropriate use or abuse of balloting privileges, or failure of a Validator to participate in offered ballots can be cited in future balloting procedures.
