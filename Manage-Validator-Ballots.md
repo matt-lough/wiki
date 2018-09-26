@@ -20,10 +20,18 @@ The Manage Validator Ballot Types are used for the following use cases:
     * Reason text
         
 * ### Removing a Validator key
+
+    To remove a Validator, `Remove Key` and `Mining Key` buttons should be clicked on the page `New Ballot` of Governance DApp. Then Mining Key of the removable Validator should be selected in the corresponding drop-down list and this Mining Key should be duplicated in `Affected Key` text field.
+
+    The `Description of the ballot` text field should be populated with:
+    * Validator's full name
+    * Network being removed from, i.e. Sokol or Core
+    * Reason text
+
 * ### Swapping key(s) for an Existing Validator
 
 
 ### Ballot Finalization Order:
 
-- Swap/Remove Keys: Voting/Payout first, then mining
 - Add Validator: Mining first, voting/payout later
+- Swap/Remove Keys: Voting/Payout first, then mining
