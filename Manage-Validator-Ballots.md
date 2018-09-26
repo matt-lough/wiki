@@ -30,6 +30,15 @@ The Manage Validator Ballot Types are used for the following use cases:
 
 * ### Swapping key(s) for an Existing Validator
 
+    To swap Mining Key of an existing Validator, `Swap Key` and `Mining Key` buttons should be clicked on the page `New Ballot` of Governance DApp. Then Mining Key to be replaced should be selected in the corresponding `Mining Key` drop-down list, and a new Mining Key should be pasted in `Affected Key` text field.
+
+    To swap Voting or Payout Key of an existing Validator, `Swap Key` and `Voting Key` (or `Payout Key`) buttons should be clicked on the page `New Ballot` of Governance DApp. Then Mining Key for which Voting/Payout Key is to be replaced should be selected in `Mining Key` drop-down list, and a new Voting Key (or Payout Key) should be pasted in `Affected Key` text field.
+
+    The `Description of the ballot` text field should be populated with:
+    * Validator's full name
+    * Network for which the key is being changed, i.e. Sokol or Core
+    * Link to profile on Forum
+    * Reason text
 
 ### Ballot Finalization Order:
 
