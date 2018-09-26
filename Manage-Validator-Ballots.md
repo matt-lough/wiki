@@ -25,5 +25,5 @@ The Manage Validator Ballot Types are used for the following use cases:
 
 ### Ballot Finalization Order:
 
-- Swap Keys: Voting/Payout first, then mining
+- Swap/Remove Keys: Voting/Payout first, then mining
 - Add Validator: Mining first, voting/payout later
