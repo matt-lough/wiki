@@ -42,4 +42,4 @@ This is the Ballot type used to manage the Validator set and their keys.
 
 Here is the current landing page of the current "Add Ballot" landing page 
 
-<img src="https://github.com/poanetwork/wiki/blob/master/assets/imgs/governance-add-ballot-page.png" height="450">
+<img src="https://github.com/poanetwork/wiki/blob/master/assets/imgs/governance-add-ballot-page.png" />
