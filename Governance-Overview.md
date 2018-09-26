@@ -6,7 +6,7 @@ _**NOTE:**_  It is essential for all Validators existing or prospective to revie
 
 To participate fully on the network a Validator needs to possess 3 keys:
 
-* Minining key
+* Mining key
      * This key is required to participate in consensus and validate transactions and blocks on the network.  This key must never be compromised and it is duty of the Validator to keep secure at all times.
 * Voting key
      * This key is required to participate in Governance and Balloting
@@ -26,11 +26,11 @@ Goverance is implemented as a DApp and currently supports the following Ballots 
 
 * Validator Management Ballot --
 This is the Ballot type used to manage the Validator set and their keys.
-   * Add a Validator keys
+   * Add a Validator keys --
      This ballot is used to add a proposed Validator to the network.  The Ballot proposer will need the (3) keys mentioned above, invitee's notary license and address. 
-   * Remove Validator keys
+   * Remove Validator keys --
      This ballot is used to remove a Validator.
-   * Swap Validator keys 
+   * Swap Validator keys --
      This ballot is used only for existing Validators to replace an existing key for a new one, for example if a key is lost or suspected of being compromised.
    
 * Consensus Threshold Ballot --
