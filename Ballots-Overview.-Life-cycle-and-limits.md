@@ -11,7 +11,7 @@ A Ballot is a proposal that changes the current state of the network.
 Here are the properties of a given Ballot:
 * Ballot Type -- These have been reviewed in the previous section.  Each Ballot Type will have different fields that need to be supplied.
 * Ballot End Time -- This defines the time window in which the Ballot is open for voting. Currently, this must be a date/time in the future that allows a reasonable time for other Validators to consider, research and discuss the ballot.  The format is mm/dd/yyyy, hh:mm AM/PM  for example 02/22/2022, 10:00 PM.  <question: which time zone?  Consideration is being given to converting this to an 'hours+minute+seconds from ballot start' format to eliminate possible time zone concerns.>
-* Consensus Threshold -- This defines the minimum number of "Yes" votes for a Ballot to succeed.  Once a ballot has been created this value is immutable.
+* Consensus Threshold -- This defines the minimum number of votes for a Ballot to succeed.  Once a ballot has been created this value is immutable.
 
 
 ## Types
