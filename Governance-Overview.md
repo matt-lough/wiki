@@ -39,6 +39,9 @@ This is the Ballot type used to manage the Validator set and their keys.
 * Modify Proxy Contract Ballot --
   This ballot is used to manage the underlying contracts that control the Consensus mechanisms on chain.  This functionality adds flexibility to the network but also adds complexity and nuance to the Validators role.  For these ballots the Validator must have sophisticated knowledge ( or access to a third-party with such knowledge ) of the existing contracts as well as the impact the new contract will have on the network.
 
+* Emission Funds Ballot --
+  This ballot is used to manage emission funds accumulated within the framework of [Increased Emission Supply](https://github.com/poanetwork/wiki/wiki/POA-Network-Whitepaper#economy). Any validator can create the ballot that has three actions to choice: burn coins, hold coins, or send coins to a specified address to spend on R&D Foundation. This type of ballot is available from November 17, 2018.
+
 
 Here is the screen of the current "Add Ballot" landing page 
 
