@@ -39,9 +39,8 @@ Let's assume that a validator created a new ballot on `December 3 at 10:00 AM`. 
 After that validators will be able to create the next ballot from `March 1, 2019 10:00 AM` and it will have an end date of `March 8, 2019 10:00 AM`. And so on.
 
 ## Notes
-
-Note that only **one** ballot of this type can be created at a time. Validators cannot create a few ballots of this type in parallel: to be able to create a new ballot, the previous ballot must be finalized.
-
-In `Sokol` network we have reduced values of `emission release threshold` and `distribution threshold` (for testing purposes):
-- `emission release threshold` is equal to `7 days`
-- `distribution threshold` is equal to `3 days`
+- Note that only **one** ballot of this type can be created at a time. Validators cannot create a few ballots of this type in parallel: to be able to create a new ballot, the previous ballot must be finalized.
+- In `Sokol` network we have reduced values of `emission release threshold` and `distribution threshold` (for testing purposes):
+    * `emission release threshold` is equal to `7 days`
+    * `distribution threshold` is equal to `3 days`
+- Creator of a ballot can cancel the ballot within 15 minutes right after its creation.
