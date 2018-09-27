@@ -24,15 +24,10 @@ As a result of creating a ballot, its card will appear in a ballot card list. Fo
 
 ## Time limitations
 
-Validators can create a ballot of this type every `3 months`. This period of time is called `emission release threshold`.
-
-Validators also have `distribution threshold` of 7 days max when they can make a decision about distribution.
-
-E.g. validator started a ballot 2 days after `emission release threshold` then ballot may have 5 days or less `distribution threshold`.
-
-A validator who created a ballot can cancel the ballot within 15 minutes right after its creation:
-
-![](https://raw.githubusercontent.com/poanetwork/wiki/master/assets/imgs/manage-emission-funds/cancel-ballot.png)
+- Validators can create a ballot of this type every `3 months`. This period of time is called `emission release threshold`.
+- Validators also have `distribution threshold` of 7 days max when they can make a decision about distribution. E.g. validator started a ballot 2 days after `emission release threshold` then ballot may have 5 days or less `distribution threshold`.
+- A validator who created a ballot can cancel the ballot within 15 minutes right after its creation:
+  ![](https://raw.githubusercontent.com/poanetwork/wiki/master/assets/imgs/manage-emission-funds/cancel-ballot.png)
 
 ### Example
 
