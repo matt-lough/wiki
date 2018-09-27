@@ -36,6 +36,7 @@
         *  [Ballots -- Overview, Life cycle & Limits](Ballots-Overview.-Life-cycle-and-limits)
         *  [Manage Validator Ballots]( https://github.com/poanetwork/wiki/wiki/Manage-Validator-Ballots)
         *  [Set Validator Metadata](https://github.com/poanetwork/wiki/wiki/Validator-Set-Metadata)
+        *  [Manage Emission Funds](Manage-Emission-Funds)
     * Role of Validator
        *   [Overview](Role-of-Validator)
        *   [Validator Keys and Passwords](Validator-Keys-and-Passwords)
