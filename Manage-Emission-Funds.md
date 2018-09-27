@@ -16,7 +16,7 @@ Above the `Add Ballot` button we see the note with two dates:
 
 1) The date from which a new ballot can be created (in local time). E.g., as in the screenshot above, it is `December 1, 2018 10:00 AM`. That is, a new ballot can be created not earlier than this date.
 
-2) The date when a ballot will end (in local time). E.g., as on the screen above, the end date is `December 8, 2018 10:00 AM`. This end date is **7 days** in the future relative to the first date (`7 days` is so-called `distribution threshold`). The end date doesn't depend on the actual date of the beginning of voting. For example on the screen above, the voting can be started on `3rd December` but it will still have the end date of `December 8, 2018 at 10:00 AM`. Read `Time limitations` section below for more info.
+2) The date when a ballot will end (in local time). E.g., as on the screen above, the end date is `December 8, 2018 10:00 AM`. This end date is **7 days** in the future relative to the first date mentioned above. `7 days` is so-called `distribution threshold`. The end date doesn't depend on the actual date of the beginning of voting. For example on the screen above, the voting can be started on `3rd December` but it will still have the end date of `December 8, 2018 at 10:00 AM`. Read `Time limitations` section below for more info.
 
 As a result of creating a ballot, its card will appear in a ballot card list. For example (the screenshot of test ballot's card in Sokol network):
 
