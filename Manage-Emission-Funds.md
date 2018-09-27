@@ -1,5 +1,3 @@
-# Manage Emission Funds
-
 From `November 17, 2018` we increased `Emission Supply` by 2.5% to support self-sustainability. This was scheduled and described in [POA Whitepaper](https://github.com/poanetwork/wiki/wiki/POA-Network-Whitepaper#economy), [POA Token Supply](https://github.com/poanetwork/wiki/wiki/POA-Token-Supply#after-the-core-launch), and [RFC issue #14](https://github.com/poanetwork/RFC/issues/14).
 
 Therefore, starting from `November 17, 2018` every block produces **2 POA** instead of **1 POA**: 1 POA is still for validator's reward and a remaining 1 POA is accrued to `EmissionFunds` smart contract which permanently accumulates these funds.
