@@ -43,15 +43,16 @@ POA Network is the first Ethereum-based public network with Proof of Authority c
     * Governance
         * [Governance Overview](Governance-Overview)
         * [Ballots -- Overview, Life cycle & Limits](Ballots-Overview.-Life-cycle-and-limits/)
-        *  [Manage Validator Ballots]( Manage-Validator-Ballots)
-        *  [Set Validator Metadata](Validator-Set-Metadata)
+        * [Manage Validator Ballots](Manage-Validator-Ballots)
+        * [Set Validator Metadata](Validator-Set-Metadata)
+        * [Manage Emission Funds](Manage-Emission-Funds)
     * Role of Validator
         * [Overview](Role-of-Validator)
         * [Validator Keys and Passwords](Validator-Keys-and-Passwords)
 
 ---
 
-__POA Network is NOT an ERC20 token, but is ERC20 Compatiable. POA has its own blockchain, networks and is the first of its kind. The network is a working progress, features and additions will be added/completed in a timely manner. If you are having any issues with any of POA services, please create a Github Issue in the `wiki` repository, thank you.__
+__POA Network is NOT an ERC20 token but is ERC20 Compatible. POA has its own blockchain, networks and is the first of its kind. The network is a working progress, features and additions will be added/completed in a timely manner. If you are having any issues with any of POA services, please create a Github Issue in the `wiki` repository, thank you.__
 
 ## POA Network Resources
 - POA Network Website: [https://poa.network/](https://poa.network/)
