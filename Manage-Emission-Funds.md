@@ -8,7 +8,7 @@ In order to create a new ballot, a validator should launch `Governance DApp`, op
 
 ![](https://raw.githubusercontent.com/poanetwork/wiki/master/assets/imgs/manage-emission-funds/new-ballot.png)
 
-On that page, validator should enter a ballot description and paste an address of funds receiver which the funds will be sent to if `Send` action obtains the majority of votes.
+On that page, a validator should enter a ballot description and paste an address of funds receiver which the funds will be sent to if `Send` action obtains the majority of votes.
 
 The field `Current amount of funds` is not editable and just shows the current balance of `EmissionFunds` contract.
 
@@ -30,7 +30,8 @@ Validators also have `distribution threshold` of 7 days max when they can make a
 
 E.g. validator started a ballot 2 days after `emission release threshold` then ballot may have 5 days or less `distribution threshold`.
 
-A validator that created a ballot can cancel the ballot within 15 minutes right after its creation:
+A validator who created a ballot can cancel the ballot within 15 minutes right after its creation:
+
 ![](https://raw.githubusercontent.com/poanetwork/wiki/master/assets/imgs/manage-emission-funds/cancel-ballot.png)
 
 ### Example
