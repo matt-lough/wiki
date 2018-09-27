@@ -30,6 +30,9 @@ Validators also have `distribution threshold` of 7 days max when they can make a
 
 E.g. validator started a ballot 2 days after `emission release threshold` then ballot may have 5 days or less `distribution threshold`.
 
+A validator that created a ballot can cancel the ballot within 15 minutes right after its creation:
+![](https://raw.githubusercontent.com/poanetwork/wiki/master/assets/imgs/manage-emission-funds/cancel-ballot.png)
+
 ### Example
 
 For example on the first screen above, `emission release threshold` is equal to `December 1, 2018 10:00 AM`. So, we add 7 days (`distribution threshold`) and get `December 8, 10:00 AM` as an end date of the ballot.
@@ -43,4 +46,3 @@ After that validators will be able to create the next ballot from `March 1, 2019
 - In `Sokol` network we have reduced values of `emission release threshold` and `distribution threshold` (for testing purposes):
     * `emission release threshold` is equal to `7 days`
     * `distribution threshold` is equal to `3 days`
-- Creator of a ballot can cancel the ballot within 15 minutes right after its creation.
