@@ -2,53 +2,52 @@
 
 # POA Network Wiki
 
-POA Network is the first Ethereum-based public network with Proof of Authority consensus, reached by independent validators. We are building a public network for smart contracts that combines speed, security, and cost efficiency. We see POA Network as a first step towards realizing our vision of horizontal blockchains scalability by creating a swarm of blockchains with Proof of Authority consensus, connected by interledger protocols.
+POA Network is the first Ethereum-based public network with Proof of Authority consensus, reached by independent validators. We are building a public network for smart contracts that combines speed, security, and cost efficiency. We see POA Network as a first step towards realizing our vision of horizontal blockchains scalability by creating a swarm of blockchains with Proof of Authority consensus, connected by interledger protocols. 
 
 * Getting Started
-    * [Installation](POA-Installation)
+    * [Installation](https://github.com/poanetwork/wiki/wiki/POA-Installation)
     * Wallets
-        * [Nifty Wallet](POA-Network-on-Nifty-Wallet)
-        * [MetaMask](POA-Network-on-MetaMask)
-        * [MEW](POA-Network-on-MEW)
-        * [Ledger](POA-Network-on-Ledger)
-        * [Trezor](POA-Network-on-Trezor)
-        * [Trust Mobile Wallet](POA-Network-on-Trust-Wallet)
-        * [CitoWise Mobile Wallet](https://github.com/poanetwork/wiki/wiki/POA-Network-on-CitoWise)
-
-    * [Exchanges](POA-on-Exchanges)
+        * [Nifty Wallet](https://github.com/poanetwork/wiki/wiki/POA-Network-on-Nifty-Wallet)
+        * [MetaMask](https://github.com/poanetwork/wiki/wiki/POA-Network-on-MetaMask)
+        * [MEW](https://github.com/poanetwork/wiki/wiki/POA-Network-on-MEW)
+        * [Ledger](https://github.com/poanetwork/wiki/wiki/POA-Network-on-Ledger)
+        * [Trezor](https://github.com/poanetwork/wiki/wiki/POA-Network-on-Trezor)
+        * [Trust](https://github.com/poanetwork/wiki/wiki/POA-Network-on-Trust-Wallet)
+    * [Exchanges](https://github.com/poanetwork/wiki/wiki/POA-on-Exchanges)
     * Additional Resources
+      * [MetaMask Tutorial](https://docs.google.com/document/d/1mON7oqGTgr5aq00Q982LPtD5IvhQNATMUe8Q3p9v7dM/edit?usp=sharing)
       * [Key Management Tutorial](https://docs.google.com/document/d/1EItXLZv1ma-pOZOTnWh4NSdpSh-8V71B49a-h8eec4E/edit?usp=sharing)
       * [Installation Checklist](https://docs.google.com/document/d/1-1COzMXZen2gWUz94Tf4SQo7QRCAgTFW6Pd8TupT38s/edit?usp=sharing)
-    * [FAQ](Frequently-Asked-Questions)
+    * [FAQ](https://github.com/poanetwork/wiki/wiki/Frequently-Asked-Questions)
 * Roles
-    * [Master of Ceremony](Master-of-Ceremony-Setup)
+    * [Master of Ceremony](https://github.com/poanetwork/wiki/wiki/Master-of-Ceremony-Setup)
     * Validator
-        * [AWS](Validator-Node-on-AWS)
-        * [Non-AWS](Validator-Node-Non-AWS)
+        * [AWS](https://github.com/poanetwork/wiki/wiki/Validator-Node-on-AWS)
+        * [Non-AWS](https://github.com/poanetwork/wiki/wiki/Validator-Node-Non-AWS)
     * Full/Boot Node Operator
-        * [AWS](Bootnode-Setup-AWS)
-        * [Non-AWS](Bootnode-Setup-Non-AWS)
+        * [AWS](https://github.com/poanetwork/wiki/wiki/Bootnode-Setup-AWS)
+        * [Non-AWS](https://github.com/poanetwork/wiki/wiki/Bootnode-Setup-Non-AWS)
 * Hard Forks
     * Sokol
-        * [2018-01-08](HFs-Sokol-2018-01-08)
-        * [2018-01-18](HFs-Sokol-2018-01-18)
-        * [2018-09-19](HFs-Sokol-2018-09-19)
+        * [2018-01-08](https://github.com/poanetwork/wiki/wiki/HFs-Sokol-2018-01-08)
+        * [2018-01-18](https://github.com/poanetwork/wiki/wiki/HFs-Sokol-2018-01-18)
+        * [2018-09-19](https://github.com/poanetwork/wiki/wiki/HFs-Sokol-2018-09-19)
     * Core
-        * [2018-01-29](HFs-Core-2018-01-29)
+        * [2018-01-29](https://github.com/poanetwork/wiki/wiki/HFs-Core-2018-01-29)
 * POA
-    * [Token Sale Info](POA-Token-Sale-Info)
-    * [Token Supply](POA-Token-Supply)
-    * [What is POA](What-is-POA)
-    * [Papers](POA-Network-Papers)
+    * [Token Sale Info](https://github.com/poanetwork/wiki/wiki/POA-Token-Sale-Info)
+    * [Token Supply](https://github.com/poanetwork/wiki/wiki/POA-Token-Supply)
+    * [Papers](https://github.com/poanetwork/wiki/wiki/POA-Network-Papers)
+    * [What is POA](https://github.com/poanetwork/wiki/wiki/What-is-POA)
     * Governance
-        * [Governance Overview](Governance-Overview)
-        * [Ballots -- Overview, Life cycle & Limits](Ballots-Overview.-Life-cycle-and-limits/)
-        * [Manage Validator Ballots](Manage-Validator-Ballots)
-        * [Set Validator Metadata](Validator-Set-Metadata)
-        * [Manage Emission Funds](Manage-Emission-Funds)
+        * [Governance Overview](https://github.com/poanetwork/wiki/wiki/Governance-Overview)
+        * [Ballots -- Overview, Life cycle & Limits](https://github.com/poanetwork/wiki/wiki/Ballots-Overview.-Life-cycle-and-limits/)
+        * [Manage Validator Ballots]( https://github.com/poanetwork/wiki/wiki/Manage-Validator-Ballots)
+        * [Set Validator Metadata](https://github.com/poanetwork/wiki/wiki/Validator-Set-Metadata)
+        * [Manage Emission Funds](https://github.com/poanetwork/wiki/wiki/Manage-Emission-Funds)
     * Role of Validator
-        * [Overview](Role-of-Validator)
-        * [Validator Keys and Passwords](Validator-Keys-and-Passwords)
+        * [Overview](https://github.com/poanetwork/wiki/wiki/Role-of-Validator) 
+        * [Validator Keys and Passwords](https://github.com/poanetwork/wiki/wiki/Validator-Keys-and-Passwords)
 
 ---
 
@@ -61,10 +60,10 @@ __POA Network is NOT an ERC20 token but is ERC20 Compatible. POA has its own blo
 
 ### POA Network Block Explorers
 - Core (live) Explorer: [https://core-explorer.poa.network/](https://core-explorer.poa.network/)
-- Community Made POA Core Explorer: [https://poaexplorer.com/](https://poaexplorer.com/)
+- Community Made POA Core Explorer: [https://poaexplorer.com/](https://poaexplorer.com/)    
     Made by Telegram Community Member, [Andrew Cravenho](https://github.com/acravenho)
-
-
+    
+    
 ## For developers:
 
 ### Core (live)
@@ -81,7 +80,10 @@ __POA Network is NOT an ERC20 token but is ERC20 Compatible. POA has its own blo
 - Sokol (test) Explorer: [https://sokol-explorer.poa.network/](https://sokol-explorer.poa.network/)
 - Sokol (test) Netstats: [https://sokol-netstat.poa.network/](https://sokol-netstat.poa.network/)
 
-Sokol Validator DApp URLs: ( For now -- please use the following URLs )
+## For validators:
 
-- Validators DApp: [https://poanetwork.github.io/poa-dapps-validators/](https://poanetwork.github.io/poa-dapps-validators/)
-- Voting DApp: [https://poanetwork.github.io/poa-dapps-voting/](https://poanetwork.github.io/poa-dapps-voting/)
+Validator DApp URLs (Core/Sokol):
+
+- Validators DApp: [https://validators.poa.network/](https://validators.poa.network/)
+- Voting DApp: [https://voting.poa.network/](https://voting.poa.network/)
+- Ceremony DApp: [https://ceremony.poa.network/](https://ceremony.poa.network/)
