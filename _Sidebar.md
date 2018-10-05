@@ -25,6 +25,7 @@
         * [2018-09-19](HFs-Sokol-2018-09-19)
     * Core
         * [2018-01-29](HFs-Core-2018-01-29)
+        * [2018-10-22](HFs-Core-2018-10-22)
 
 * POA
     * [Token Sale Info](POA-Token-Sale-Info)
