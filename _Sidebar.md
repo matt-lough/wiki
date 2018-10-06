@@ -1,6 +1,7 @@
 * Getting Started
     * [Installation](POA-Installation)
     * [Wallets](https://github.com/poanetwork/wiki/wiki/Wallets)
+        * [Nifty Wallet](POA-Network-on-Nifty-Wallet)
         * [MetaMask](POA-Network-on-MetaMask)
         * [MEW](POA-Network-on-MEW)
         * [Ledger](POA-Network-on-Ledger)
