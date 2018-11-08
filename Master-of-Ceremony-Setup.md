@@ -9,7 +9,7 @@ Prerequisites:
 
 ## Chapter I - in which MoC creates his secret keys and never shows them to others
 
-You will need to generate ethereum address and keystore file for the `MoC` (Master of Ceremony).  
+You will need to generate ethereum address and keystore file for the `MoC` (Master of Ceremony).
 One way is to download `etherwallet-v*.*.*.*.zip` archive of the latest release from myetherwallet github repo https://github.com/kvhnuke/etherwallet/releases/
 then unplug your computer from the Internet, extract zip archive and open `index.html` in your browser.
 Please be sure to use strong password, download keystore file `UTC--*--*`, your private key and keep them in a safe place.
@@ -18,6 +18,15 @@ Please be sure to use strong password, download keystore file `UTC--*--*`, your 
 
 There are quite a few repositories that are used to run the network. You will need to fork them and later update parameters.
 Please be consistent with naming of branches and use `NetworkName`.
+
+*Repos you should fork*
+- https://github.com/poanetwork/deployment-playbooks
+- https://github.com/poanetwork/chain-explorer
+- https://github.com/cubedro/eth-netstats
+- https://github.com/cubedro/eth-net-intelligence-api
+*Repos below must have a `NetworkName` branch*
+- https://github.com/poanetwork/poa-chain-spec
+- https://github.com/poanetwork/poa-scripts-moc
 
 ### POA Network Consensus contract
 https://github.com/poanetwork/poa-network-consensus-contracts
@@ -40,7 +49,7 @@ https://github.com/poanetwork/poa-chain-spec
 
 3. In "params" block, change networkID to your `NetworkID` in hex.
 
-**NOTE**: When creating Core and Sokol, there are additional steps:  
+**NOTE**: When creating Core and Sokol, there are additional steps:
 3.a. in "params" block change `stepDuration` to `5` (number)
 ```
 "stepDuration": 5,
@@ -52,7 +61,7 @@ https://github.com/poanetwork/poa-chain-spec
 ```
 3.c make sure all unnecessary contracts are removed from "accounts" block, only the one in "safeContract" should be left.
 
-4. Scroll down to "accounts" block and replace constructor for "0xf472e0e43570b9afaab67089615080cf7c20018d" with bytecode you obtained from POA Network Consensus contract "0x606060..."
+4. Scroll down to "accounts" block and replace constructor for "0xf472e0e43570b9afaab67089615080cf7c20018d" with bytecode you obtained from POA Network Consensus contract "0x606060...". The address for this `account` is your `POA_NETWORK_CONSENSUS_CONTRACT_ADDRESS`.
 
 5. Replace address of account with a huge amount of money with your MoC address
 
@@ -67,6 +76,7 @@ https://github.com/poanetwork/poa-chain-spec
 ```
 
 7. Open `bootnodes.txt` and remove all lines from this file
+8. Push your new branch to github
 
 ### Ansible playbook
 https://github.com/poanetwork/deployment-playbooks
@@ -154,6 +164,12 @@ Wait till the command completes, extract from logs and write down IP address and
 ansible-playbook -i hosts site.yml -l 192.0.2.1
 ```
 If this command fails because host is unreachable over ssh, wait a minute and start again, it takes some time to reboot.
+If that doesn't work try adding the path to your SSH private key into the `hosts` file. e.g
+
+```
+[netstat]
+192.0.2.1 ansible_ssh_private_key_file=~/.ssh/MY_SSH_KEY
+```
 
 6. Login as root and edit site config for nginx - uncomment the following lines in `/etc/nginx/conf.d/default.conf`:
 ```
@@ -233,7 +249,7 @@ systemctl restart poa-parity
 ssh root@netstat.ip
 systemctl restart poa-dashboard
 ```
-This should fix the problem from now on. 
+This should fix the problem from now on.
 
 ### Create a node for Explorer
 1. Create a file with a full config for this node:
@@ -330,7 +346,7 @@ Also, `contracts.json` will be generated. Copy it and paste to the forked `chain
 ```
 cd ~/poa-scripts-moc/distributeTokens
 ```
-Upload csv file with `wallet,tokens` list, then edit `.env` file: replace `FAT_BALANCE` with your MoC address and `FILENAME_CSV_INVESTORS` with the csv file name. Run 
+Upload csv file with `wallet,tokens` list, then edit `.env` file: replace `FAT_BALANCE` with your MoC address and `FILENAME_CSV_INVESTORS` with the csv file name. Run
 ```
 node distribute.js
 ```
@@ -373,7 +389,7 @@ ansible-playbook -i hosts site.yml
 
 ## Chapter IV - in which MoC prepares other repositories
 
-### DApp - Keys generation  
+### DApp - Keys generation
 https://github.com/poanetwork/poa-dapps-keys-generation/tree/core
 
 1. in `src/getWeb3.js` change number to `NetworkID`
@@ -409,7 +425,7 @@ case 'your_network_ID':
 https://github.com/poanetwork/poa-scripts-moc/tree/master
 (same steps as you did manually on moc's node):
 1. Create a branch named `NetworkName` from master branch.
-2. Update `contracts.KeysManager.addr` in `config.json` to the one you obtained when deploying other contracts of consensus 
+2. Update `contracts.KeysManager.addr` in `config.json` to the one you obtained when deploying other contracts of consensus
 3. Update `FAT_BALANCE` in `./distributeTokens/.env` to MoC's address.
 
 ### Repository with scripts for `validator` node
@@ -418,10 +434,10 @@ https://github.com/poanetwork/poa-scripts-validator/tree/master
 2. Update `contracts.KeysManager.addr` in `config.json` to the one you obtained when deploying other contracts of consensus (same thing as you did manually on moc's node).
 
 ## Chapter VI - in which MoC changes links in Validator's README
-1. Supply the validator's README with the correct Keys Exchange DApp url: 
-- https://github.com/poanetwork/wiki/wiki/Validator-Node-on-AWS#exchange-your-initial-keys-for-mining-payout-and-voting-keys 
-or 
-- https://github.com/poanetwork/wiki/wiki/Validator-Node-Non-AWS#exchange-your-initial-keys-for-mining-payout-and-voting-keys 
+1. Supply the validator's README with the correct Keys Exchange DApp url:
+- https://github.com/poanetwork/wiki/wiki/Validator-Node-on-AWS#exchange-your-initial-keys-for-mining-payout-and-voting-keys
+or
+- https://github.com/poanetwork/wiki/wiki/Validator-Node-Non-AWS#exchange-your-initial-keys-for-mining-payout-and-voting-keys
 depending on your VM.
 
 ## Chapter VII - in which MoC gives initial keys to first validators and hopes for the best
